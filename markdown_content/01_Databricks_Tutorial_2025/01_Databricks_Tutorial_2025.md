@@ -1,4 +1,4 @@
-**01 Databricks Tutorial 2025**
+# **01 Databricks Tutorial 2025**
 
 This introduction video launches a new **“Databricks 0 to Hero”** series
 focused on learning the Databricks platform from beginner to advanced
@@ -106,3 +106,5 @@ style="width:2.51402in;height:1.45146in" />
 
 These playlists cover topics from beginner concepts to advanced
 optimization techniques.
+
+* [Content](./../../README.md)
