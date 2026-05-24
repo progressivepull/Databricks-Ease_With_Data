@@ -1,0 +1,231 @@
+{
+  "config": {
+    "version": "",
+    "exam_name": "",
+    "link_base_url": "",
+    "link_folder_name": "",
+    "link_file_name": "",
+    "link_terms": "",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is a key advantage of a Data Lakehouse compared to traditional data warehouses?"
+        }
+      ],
+      "options": {
+        "A": "It only stores structured data in predefined schemas",
+        "B": "It eliminates the need for any data governance",
+        "C": "It combines the scalability of data lakes with the reliability of data warehouses",
+        "D": "It requires all data to be processed before storage",
+        "E": "It cannot support machine learning workloads"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is a key characteristic of a data lake?"
+        }
+      ],
+      "options": {
+        "A": "It stores only structured data in predefined schemas",
+        "B": "It requires data to be cleaned and transformed before storage",
+        "C": "It stores raw data in its native format until needed",
+        "D": "It is optimized exclusively for transactional processing",
+        "E": "It only supports relational database formats"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is a primary purpose of a data warehouse?"
+        }
+      ],
+      "options": {
+        "A": "To store raw, unprocessed data from multiple sources",
+        "B": "To handle real-time transactional processing for applications",
+        "C": "To provide a centralized repository optimized for querying and analysis",
+        "D": "To replace operational databases used in day-to-day business operations",
+        "E": "To store only unstructured data such as images and videos"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Unity Catalog in the Databricks ecosystem?"
+        }
+      ],
+      "options": {
+        "A": "To manage real-time streaming data ingestion pipelines",
+        "B": "To provide a unified governance layer for data and AI assets across workspaces",
+        "C": "To optimize cluster performance and resource allocation",
+        "D": "To replace Apache Spark as the main data processing engine",
+        "E": "To create interactive dashboards for business intelligence"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "When creating a new catalog in Unity Catalog, what does the “Catalog Type” refer to?"
+        }
+      ],
+      "options": {
+        "A": "The programming language used to query the catalog",
+        "B": "The storage location and management type (such as managed or external) of the catalog",
+        "C": "The number of users who can access the catalog",
+        "D": "The performance tier assigned to the catalog",
+        "E": "The visualization tools connected to the catalog"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Delta Live Tables (DLT) in Databricks?"
+        }
+      ],
+      "options": {
+        "A": "To create interactive business intelligence dashboards",
+        "B": " To automate and manage reliable data pipelines with built-in quality checks and monitoring",
+        "C": "To replace Unity Catalog for data governance and access control",
+        "D": "To optimize cluster hardware performance for machine learning workloads",
+        "E": "To store only unstructured streaming video data"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Jobs & Workflows in Databricks?"
+        }
+      ],
+      "options": {
+        "A": "To create interactive dashboards for business intelligence reporting",
+        "B": "To manage and orchestrate automated execution of notebooks, scripts, and data pipelines",
+        "C": "To replace Unity Catalog for centralized data governance",
+        "D": "To store unstructured data in a scalable cloud storage system",
+        "E": "To optimize GPU performance for machine learning model training"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Databricks Auto Loader?"
+        }
+      ],
+      "options": {
+        "A": "To manually optimize Spark SQL queries for faster execution",
+        "B": "To manually optimize Spark SQL queries for faster execution",
+        "C": "To replace Delta Lake with traditional relational databases",
+        "D": "To create machine learning models automatically from streaming data",
+        "E": "To permanently archive old files from cloud storage without processing them"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}
