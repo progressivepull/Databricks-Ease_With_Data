@@ -34,4 +34,4 @@ Here are some good YouTube videos that explain **Data Lakehouse** concepts clear
 - [Data Warehouse vs Data Lake vs Data Lakehouse \| ETL, OLAP vs OLTP](https://www.youtube.com/watch?v=yRerKDM1h74) \| [  
   codebasics](https://www.youtube.com/@codebasics) \| YouTube
 
-  # [README](./../../README.md)
+  # [README](./../../../README.md)
