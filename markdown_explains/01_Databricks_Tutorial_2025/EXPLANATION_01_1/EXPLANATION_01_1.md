@@ -1,4 +1,4 @@
-**EXPLATION 01.1**
+# EXPLANATION_01_1
 
 **Data Lakehouse \| Data Lakes \| Data Warehouses**
 
@@ -33,3 +33,5 @@ Here are some good YouTube videos that explain **Data Lakehouse** concepts clear
 
 - [Data Warehouse vs Data Lake vs Data Lakehouse \| ETL, OLAP vs OLTP](https://www.youtube.com/watch?v=yRerKDM1h74) \| [  
   codebasics](https://www.youtube.com/@codebasics) \| YouTube
+
+  ./../../README.md
