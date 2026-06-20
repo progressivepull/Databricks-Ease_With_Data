@@ -226,6 +226,60 @@
           "language": ""
         }
       }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which topic in the “Databricks 0 to Hero” series focuses on governance and management of data assets?"
+        }
+      ],
+      "options": {
+        "A": "SQL Warehouses",
+        "B": "Auto Loader",
+        "C": "Lakehouse & Unity Catalog",
+        "D": "Azure DevOps",
+        "E": "Cost Optimization"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following is a recommended prerequisite for learners before starting the Databricks series?"
+        }
+      ],
+      "options": {
+        "A": "JavaScript",
+        "B": "Tableau",
+        "C": "Kubernetes",
+        "D": "Python",
+        "E": "Power BI"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
     }
   ]
 }
