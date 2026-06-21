@@ -8,8 +8,8 @@
     "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/01_Databricks_Tutorial_2025/",
     "link_answer_folder_name": "ANSWER_01_*",
     "link_answer_file_name": "ANSWER_01_*",
-    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms.md",
-    "readme_content":"https://github.com/progressivepull/DatabricksEase_With_Data/blob/main/markdown_content/01_Databricks_Tutorial_2025/01_Databricks_Tutorial_2025/01_Databricks_Tutorial_2025.md",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content":"https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
     "shuffle_questions": true,
     "shuffle_options": true,
     "time_limit_minutes": 60
