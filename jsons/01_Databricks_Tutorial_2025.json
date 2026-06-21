@@ -2,9 +2,9 @@
   "config": {
     "version": "1.0",
     "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">Databricks-Ease With Data</div>",
-    "link_explanation_base_url": "https://github.com/progressivepull/SandboxLoop/tree/main/markdown_explains",
-    "link_explanation_folder_name": "QUESTION_01_*",
-    "link_explanation_file_name": "QUESTION_01_*",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/01_Databricks_Tutorial_2025",
+    "link_explanation_folder_name": "EXPLANATION_01_*",
+    "link_explanation_file_name": "EXPLANATION_01_*",
     "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/01_Databricks_Tutorial_2025/",
     "link_answer_folder_name": "ANSWER_01_*",
     "link_answer_file_name": "ANSWER_01_*",
