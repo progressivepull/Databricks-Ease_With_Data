@@ -4,7 +4,7 @@
 
 A. A workspace can contain multiple accounts.\
 B. A metastore can contain multiple accounts.\
-**C. An account can contain multiple workspaces.\**
+**C. An account can contain multiple workspaces.**\
 D. A workspace can contain multiple metastores only.\
 E. Users must create a new account for every workspace.
 

@@ -3,8 +3,8 @@
 **Which cloud providers support Databricks deployment?**
 
 A. AWS, Oracle Cloud, IBM Cloud, Alibaba Cloud\
-B. AWS, Azure, Google Cloud Platform (GCP)\
-**C. Azure, Oracle Cloud, VMware Cloud, GCP**\
+**B. AWS, Azure, Google Cloud Platform (GCP)**\
+C. Azure, Oracle Cloud, VMware Cloud, GCP\
 D. AWS, DigitalOcean, Azure, IBM Cloud\
 E. Azure, GCP, Alibaba Cloud, Oracle Cloud
 

@@ -214,7 +214,7 @@
       ],
       "options": {
         "A": "To manually optimize Spark SQL queries for faster execution",
-        "B": "To manually optimize Spark SQL queries for faster execution",
+        "B": "To incrementally ingest new files from cloud storage into Delta tables",
         "C": "To replace Delta Lake with traditional relational databases",
         "D": "To create machine learning models automatically from streaming data",
         "E": "To permanently archive old files from cloud storage without processing them"
