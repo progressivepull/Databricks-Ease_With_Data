@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">Databricks-Ease With Data</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/04_Setup_Databricks_on_Azure",
+    "link_explanation_folder_name": "EXPLANATION_01_*",
+    "link_explanation_file_name": "EXPLANATION_01_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/04_Setup_Databricks_on_Azure",
+    "link_answer_folder_name": "ANSWER_01_*",
+    "link_answer_file_name": "ANSWER_01_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content":"https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which cloud providers currently support Databricks deployments?"
+        }
+      ],
+      "options": {
+        "A": "AWS, Oracle Cloud, IBM Cloud",
+        "B": "AWS, Microsoft Azure, Google Cloud Platform (GCP)",
+        "C": "Azure, VMware Cloud, Oracle Cloud",
+        "D": "Azure, DigitalOcean, IBM Cloud",
+        "E": "AWS, Alibaba Cloud, Oracle Cloud"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Azure subscription type is required to deploy Azure Databricks?"
+        }
+      ],
+      "options": {
+        "A": "Azure Free Trial subscription",
+        "B": "Student subscription only",
+        "C": "Enterprise Agreement only",
+        "D": "Pay-As-You-Go subscription",
+        "E": "MSDN subscription only"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which permission level is required to create an Azure Databricks workspace?"
+        }
+      ],
+      "options": {
+        "A": "Reader",
+        "B": "Storage Blob Contributor",
+        "C": "Contributor",
+        "D": "Owner of the Azure tenant only",
+        "E": "Billing Administrator"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Azure Databricks billing consists of which two primary cost categories?"
+        }
+      ],
+      "options": {
+        "A": "Azure AD licensing and SQL licensing",
+        "B": "Databricks Units (DBUs) and Azure cloud resource charges",
+        "C": "Virtual Network charges and Unity Catalog licensing",
+        "D": "Workspace licensing and notebook execution fees",
+        "E": "Azure DevOps charges and storage licensing"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why are two subnets created when deploying Azure Databricks?"
+        }
+      ],
+      "options": {
+        "A": "One for SQL Warehouses and one for Unity Catalog",
+        "B": "One for storage and one for notebooks",
+        "C": "One public subnet and one private subnet for network separation and security",
+        "D": "One subnet for developers and one for administrators",
+        "E": "Azure requires exactly two subnets for every virtual network"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of an Azure Resource Group during Azure Databricks deployment?"
+        }
+      ],
+      "options": {
+        "A": "To execute Spark jobs",
+        "B": "To store Delta tables",
+        "C": "To organize and manage related Azure resources together",
+        "D": "To replace Unity Catalog",
+        "E": "To provide authentication for Databricks users"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which deployment option provides access to additional enterprise features during the evaluation period?"
+        }
+      ],
+      "options": {
+        "A": "Standard Tier",
+        "B": "Community Edition",
+        "C": "Premium 14-day Trial",
+        "D": "Personal Workspace",
+        "E": "Serverless Trial"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "During networking configuration for Azure Databricks, which setting is recommended?"
+        }
+      ],
+      "options": {
+        "A": "Enable public IP addresses for all clusters",
+        "B": "Disable public IP addresses and use the custom Virtual Network",
+        "C": "Use Azure's default Virtual Network without customization",
+        "D": "Skip Virtual Network configuration completely",
+        "E": "Enable anonymous public network access"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which portal is used to centrally manage Databricks workspaces after deployment?"
+        }
+      ],
+      "options": {
+        "A": "Azure Active Directory Portal",
+        "B": "Azure Storage Explorer",
+        "C": "account.azuredatabricks.net (Databricks Account Console)",
+        "D": "Azure DevOps Portal",
+        "E": "Microsoft Fabric Portal"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the correct high-level sequence for deploying Azure Databricks?"
+        }
+      ],
+      "options": {
+        "A": "Launch Workspace → Create VNet → Create Resource Group",
+        "B": "Create Workspace → Create Resource Group → Configure Networking",
+        "C": "Create Resource Group → Create Virtual Network → Deploy Workspace → Launch Workspace",
+        "D": "Configure Unity Catalog → Create Workspace → Create Virtual Network",
+        "E": "Create Compute Cluster → Create Resource Group → Launch Workspace"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}
