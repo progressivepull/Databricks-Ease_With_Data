@@ -1,0 +1,285 @@
+{
+  "config": {
+    "version": "",
+    "exam_name": "",
+    "link_base_url": "",
+    "link_folder_name": "",
+    "link_file_name": "",
+    "link_terms": "",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Before Unity Catalog was introduced, what was the default catalog used by Databricks?"
+        }
+      ],
+      "options": {
+        "A": "Unity Catalog",
+        "B": "Delta Catalog",
+        "C": "Hive Metastore",
+        "D": "Azure Catalog",
+        "E": "Workspace Catalog"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which namespace format is used by the Hive Metastore?"
+        }
+      ],
+      "options": {
+        "A": "catalog.schema.table",
+        "B": "workspace.catalog.table",
+        "C": "schema.table",
+        "D": "catalog.table",
+        "E": "table.schema"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "If no schema is specified when creating a table in the Hive Metastore, where is the table created?"
+        }
+      ],
+      "options": {
+        "A": "Bronze schema",
+        "B": "Information Schema",
+        "C": "Default schema",
+        "D": "Unity Catalog schema",
+        "E": "System schema"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement correctly describes a managed table in the Hive Metastore?"
+        }
+      ],
+      "options": {
+        "A": "The user must always specify the storage location.",
+        "B": "Databricks manages both the table metadata and the physical data files.",
+        "C": "Only metadata is managed by Databricks.",
+        "D": "Data is always stored in Azure Blob Storage chosen by the user.",
+        "E": "Managed tables cannot use Delta Lake."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Where are managed table data files stored by default in the Hive Metastore?"
+        }
+      ],
+      "options": {
+        "A": "Amazon S3 only",
+        "B": "Azure Key Vault",
+        "C": "DBFS (Databricks File System)",
+        "D": "Unity Catalog Volumes",
+        "E": "Git repositories"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary difference between a managed table and an external table?"
+        }
+      ],
+      "options": {
+        "A": "Managed tables support SQL while external tables do not.",
+        "B": "Managed tables require Unity Catalog, while external tables require Hive Metastore.",
+        "C": "External tables require a user-defined storage location, while managed tables do not.",
+        "D": "Managed tables cannot store structured data.",
+        "E": "External tables automatically create views."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when a managed table is dropped?"
+        }
+      ],
+      "options": {
+        "A": "Only the metadata is removed.",
+        "B": "Only the physical data is removed.",
+        "C": "Both the metadata and physical data files are deleted.",
+        "D": "The table becomes an external table.",
+        "E": "The table is converted into a view."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when an external table is dropped?"
+        }
+      ],
+      "options": {
+        "A": "Both metadata and data files are deleted.",
+        "B": "Only the metadata is removed while the data files remain.",
+        "C": "The table is moved to the Hive Metastore default schema.",
+        "D": "The table becomes read-only.",
+        "E": "The storage location is automatically deleted."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why can an external table be recreated after it has been dropped?"
+        }
+      ],
+      "options": {
+        "A": "The metadata is automatically restored by Spark.",
+        "B": "The table definition is stored in Azure Active Directory.",
+        "C": "The physical data remains in the specified external storage location.",
+        "D": "Unity Catalog recreates the table automatically.",
+        "E": "Delta Lake permanently stores every dropped table."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement best describes a view in the Hive Metastore?"
+        }
+      ],
+      "options": {
+        "A": "A view stores a physical copy of the underlying table data.",
+        "B": "A view stores only a SQL query and does not duplicate the underlying data.",
+        "C": "A view can only be queried once.",
+        "D": "A view automatically creates a Delta table.",
+        "E": "A view cannot persist after restarting the compute cluster."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

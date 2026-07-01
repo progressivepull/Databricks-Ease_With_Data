@@ -1,0 +1,285 @@
+{
+  "config": {
+    "version": "",
+    "exam_name": "",
+    "link_base_url": "",
+    "link_folder_name": "",
+    "link_file_name": "",
+    "link_terms": "",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of the Databricks Account Console?"
+        }
+      ],
+      "options": {
+        "A": "To develop Spark notebooks only",
+        "B": "To monitor cluster CPU utilization only",
+        "C": "To centrally manage Databricks accounts, workspaces, users, and settings",
+        "D": "To replace Unity Catalog",
+        "E": "To create Delta tables only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which section of the Account Console allows administrators to view and configure individual Databricks workspaces?"
+        }
+      ],
+      "options": {
+        "A": "Catalog",
+        "B": "Workspaces",
+        "C": "Previews",
+        "D": "Settings",
+        "E": "Groups"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What additional tab becomes available after Unity Catalog is enabled?"
+        }
+      ],
+      "options": {
+        "A": "Compute",
+        "B": "Storage",
+        "C": "Permissions",
+        "D": "Monitoring",
+        "E": "Jobs"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the top-level container required before enabling Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Catalog",
+        "B": "Schema",
+        "C": "Volume",
+        "D": "Metastore",
+        "E": "Workspace"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Who has permission to manage users through the Databricks Account Console?"
+        }
+      ],
+      "options": {
+        "A": "Workspace Administrators",
+        "B": "Metastore Administrators",
+        "C": "Service Principals",
+        "D": "Account Administrators",
+        "E": "Catalog Owners"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is a Service Principal in Databricks primarily used for?"
+        }
+      ],
+      "options": {
+        "A": "Managing cluster hardware",
+        "B": "Storing Delta tables",
+        "C": "Acting as a non-human identity for automation and production workloads",
+        "D": "Creating Virtual Networks",
+        "E": "Managing notebook version history"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why are Groups used in the Databricks Account Console?"
+        }
+      ],
+      "options": {
+        "A": "To increase Spark performance",
+        "B": "To automatically create workspaces",
+        "C": "To simplify permission management by assigning permissions to collections of users",
+        "D": "To replace Azure Active Directory",
+        "E": "To manage Delta transaction logs"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the purpose of Network Connectivity Configurations (NCC)?"
+        }
+      ],
+      "options": {
+        "A": "To optimize SQL query performance",
+        "B": "To securely connect Azure resources that cannot communicate directly with Databricks",
+        "C": "To create additional Spark clusters",
+        "D": "To manage notebook permissions",
+        "E": "To configure Auto Loader"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which feature can be enabled at the account level through the Settings section?"
+        }
+      ],
+      "options": {
+        "A": "Delta Time Travel",
+        "B": "Photon Acceleration",
+        "C": "Serverless Compute for Workflows, Notebooks, and Delta Live Tables (DLT)",
+        "D": "Auto Loader",
+        "E": "Liquid Clustering"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why does the Databricks Account Console become increasingly valuable in large organizations?"
+        }
+      ],
+      "options": {
+        "A": "It automatically creates Spark applications.",
+        "B": "It eliminates the need for Unity Catalog.",
+        "C": "It centralizes management of users, workspaces, permissions, networking, and account-wide settings.",
+        "D": "It replaces Azure Portal administration.",
+        "E": "It removes the need for Service Principals."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

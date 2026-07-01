@@ -1,0 +1,285 @@
+{
+  "config": {
+    "version": "",
+    "exam_name": "",
+    "link_base_url": "",
+    "link_folder_name": "",
+    "link_file_name": "",
+    "link_terms": "",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Unity Catalog in Databricks?"
+        }
+      ],
+      "options": {
+        "A": "To optimize Spark cluster performance",
+        "B": "To replace Delta Lake storage",
+        "C": "To provide centralized governance, security, and metadata management across Databricks workspaces",
+        "D": "To create Azure Virtual Networks automatically",
+        "E": "To manage only SQL Warehouses"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the core principle of Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Store data in multiple locations for redundancy.",
+        "B": "Define security once and enforce it everywhere.",
+        "C": "Use one workspace for every department.",
+        "D": "Create a separate metastore for every catalog.",
+        "E": "Replace cloud storage with Databricks-managed storage."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which object is the top-level container in the Unity Catalog hierarchy?"
+        }
+      ],
+      "options": {
+        "A": "Catalog",
+        "B": "Schema",
+        "C": "Table",
+        "D": "Metastore",
+        "E": "Volume"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Where is Unity Catalog metadata stored?"
+        }
+      ],
+      "options": {
+        "A": "Customer Data Plane only",
+        "B": "Azure Virtual Network",
+        "C": "Databricks Control Plane",
+        "D": "Delta Lake transaction log only",
+        "E": "Unity Catalog Volume"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following is the highest-level data securable object in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Table",
+        "B": "Schema",
+        "C": "Catalog",
+        "D": "Volume",
+        "E": "View"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following objects can be stored inside a schema?"
+        }
+      ],
+      "options": {
+        "A": "Virtual Networks and Clusters",
+        "B": "Tables, Views, Functions, and Volumes",
+        "C": "Workspaces and Users",
+        "D": "Metastores and Catalogs",
+        "E": "Storage Credentials and External Locations"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What types of data can Unity Catalog Volumes store?"
+        }
+      ],
+      "options": {
+        "A": "Only structured relational tables",
+        "B": "Only machine learning models",
+        "C": "Structured, semi-structured, and unstructured data",
+        "D": "Only JSON and CSV files",
+        "E": "Only Delta transaction logs"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following is an example of a non-data securable object managed by Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Table",
+        "B": "View",
+        "C": "Volume",
+        "D": "Storage Credential",
+        "E": "Schema"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How are tables referenced in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "table",
+        "B": "schema.table",
+        "C": "workspace.schema.table",
+        "D": "catalog.schema.table",
+        "E": "metastore.catalog.table"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why is centralized governance with Unity Catalog beneficial for organizations?"
+        }
+      ],
+      "options": {
+        "A": "It eliminates the need for cloud storage.",
+        "B": "It automatically creates Spark clusters.",
+        "C": "It provides consistent security, simplified administration, auditing, and governance across multiple workspaces.",
+        "D": "It replaces Databricks Runtime with Photon.",
+        "E": "It stores all customer data in the Control Plane."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

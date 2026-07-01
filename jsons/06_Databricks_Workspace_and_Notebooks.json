@@ -1,0 +1,288 @@
+{
+  "config": {
+    "version": "",
+    "exam_name": "",
+    "link_base_url": "",
+    "link_folder_name": "",
+    "link_file_name": "",
+    "link_terms": "",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of the Databricks Workspace?"
+        }
+      ],
+      "options": {
+        "A": "To manage Azure subscriptions only",
+        "B": "To monitor network traffic between clusters",
+        "C": "To serve as the main development environment for creating and managing Databricks artifacts",
+        "D": "To replace Unity Catalog",
+        "E": "To configure Virtual Networks"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following items can users store in their personal workspace folders?"
+        }
+      ],
+      "options": {
+        "A": "Only Delta tables",
+        "B": "Only notebooks and SQL warehouses",
+        "C": "Notebooks, queries, dashboards, MLflow experiments, and files",
+        "D": "Only Spark clusters and jobs",
+        "E": "Only Unity Catalog metadata"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which programming languages are natively supported in Databricks notebooks?"
+        }
+      ],
+      "options": {
+        "A": "Python, Java, C#, and Go",
+        "B": "Python, SQL, Scala, and R",
+        "C": "JavaScript, SQL, Kotlin, and R",
+        "D": "Python, Ruby, Scala, and Julia",
+        "E": "SQL, Bash, Java, and PowerShell"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What must happen before code in a Databricks notebook can be executed?"
+        }
+      ],
+      "options": {
+        "A": "Unity Catalog must be enabled.",
+        "B": "The notebook must be exported to Git.",
+        "C": "The notebook must be attached to a Compute cluster.",
+        "D": "A Delta table must be created first.",
+        "E": "A Service Principal must be configured."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which configuration is recommended to reduce cloud costs when creating a compute cluster?"
+        }
+      ],
+      "options": {
+        "A": "Enable Photon Acceleration only",
+        "B": "Increase the number of worker nodes",
+        "C": "Enable Auto Termination",
+        "D": "Disable Spark Session creation",
+        "E": "Use only multi-node clusters"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What does the following command create in a Databricks notebook?"
+        },
+        {
+          "line": "spark.range(0,10)"
+        }
+      ],
+      "options": {
+        "A": "A Delta table containing values 0–10",
+        "B": "A Spark DataFrame containing values 0 through 9",
+        "C": "A SQL database named Range",
+        "D": "A Python list of numbers",
+        "E": "A new Spark cluster"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which feature allows multiple programming languages to be used within the same Databricks notebook?"
+        }
+      ],
+      "options": {
+        "A": "Unity Catalog",
+        "B": "Delta Lake",
+        "C": "Magic Commands (such as %sql and %sh)",
+        "D": "MLflow Experiments",
+        "E": "Variable Explorer"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Markdown (Text) cells in a Databricks notebook?"
+        }
+      ],
+      "options": {
+        "A": "Execute Spark jobs faster",
+        "B": "Store Delta transaction logs",
+        "C": "Document and explain notebook content without executing code",
+        "D": "Create Compute clusters automatically",
+        "E": "Configure Unity Catalog permissions"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Databricks notebook feature allows developers to restore previous versions of a notebook?"
+        }
+      ],
+      "options": {
+        "A": "Spark UI",
+        "B": "Variable Explorer",
+        "C": "Version History",
+        "D": "Catalog Explorer",
+        "E": "Cluster Metrics"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why is it recommended to terminate a compute cluster after finishing your work?"
+        }
+      ],
+      "options": {
+        "A": "To permanently delete the notebook",
+        "B": "To enable Unity Catalog automatically",
+        "C": "To stop Azure Virtual Machines and reduce unnecessary cloud costs",
+        "D": "To increase Spark performance for future jobs",
+        "E": "To convert notebooks into SQL scripts"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}
