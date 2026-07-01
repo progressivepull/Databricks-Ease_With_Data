@@ -1,0 +1,68 @@
+
+01 Databricks Tutorial 2025.docx
+01_Databricks_Tutorial_2025.docx
+
+02 What is Data Lakehouse.docx
+02_What_is_Data_Lakehouse.docx
+
+03 Databricks High Level Architecture.docx
+03_Databricks_High_Level_Architecture.docx
+
+04 Setup Databricks on Azure.docx
+04_Setup_Databricks_on_Azure.docx
+
+05 Understanding the Databricks Account Console.docx
+05_Understanding_the_Databricks_Account_Console.doc
+
+06 Databricks Workspace and Notebooks.docx
+06_Databricks_Workspace_and_Notebooks.docx
+
+08 What is Unity Catalog and Databricks Governance.docx
+08_What_is_Unity_Catalog_and_Databricks_Governance.docx
+
+09 Legacy Hive Metastore Catalog in Databricks.docx
+09_Legacy_Hive_Metastore_Catalog_in_Databricks.doc
+
+10 Enable Unity Catalog and Set Up a Metastore.docx
+10_Enable_Unity_Catalog_and_Set_Up_a_Metastore.docx
+
+11 Catalogs, External Locations, and Storage Credentials in Unity Catalog.docx
+11_Catalogs_External_Locations_and_Storage_Credentials_in_Unity_Catalog.docx
+
+13 Managed & External Tables in Unity Catalog vs. Legacy Hive Metastore.docx
+13_Managed_and_External_Tables_in_Unity_Catalog_vs_Legacy_Hive_Metastore.doc
+
+14 Delta Tables, Utility Commands, Views, CTAS, Deep Clone, and Shallow Clone.docx
+14_Delta_Tables_Utility_Commands_Views_CTAS_Deep_Clone_and_Shallow_Clone.docx
+
+15 Delta Tables MERGE (UPSERT) Operations.docx
+15_Delta_Tables_MERGE_UPSERT_Operations.docx
+
+16 Delta Tables – Deletion Vectors and Liquid Clustering.docx
+16_Delta_Tables_Deletion_Vectors_and_Liquid_Clustering.docx
+
+17 Volumes – Managed and External in Databricks.docx
+17_Volumes_Managed_and_External_in_Databricks.docx
+
+18 Databricks Utilities (DBUtils).docx
+18_Databricks_Utilities_DBUtils.docx
+
+19 Orchestrating Notebook Jobs, Schedules, and Parameters in Databricks.docx
+19_Orchestrating_Notebook_Jobs_Schedules_and_Parameters_in_Databricks.docx
+
+20 Databricks Compute – All-Purpose Compute and Job Compute.docx
+20_Databricks_Compute_All_Purpose_Compute_and_Job_Compute.docx
+
+22 Workflows, Jobs, and Tasks in Databricks.docx
+22_Workflows_Jobs_and_Tasks_in_Databricks.docx
+
+23 Databricks COPY INTO Command.docx
+23_Databricks_COPY_INTO_Command.docx
+
+
+
+
+
+
+
+
