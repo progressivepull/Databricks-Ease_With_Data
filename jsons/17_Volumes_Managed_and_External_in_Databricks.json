@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">17 Volumes – Managed and External in Databricks</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/17_Volumes_Managed_and_External_in_Databricks",
+    "link_explanation_folder_name": "EXPLANATION_17_*",
+    "link_explanation_file_name": "EXPLANATION_17_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/17_Volumes_Managed_and_External_in_Databricks",
+    "link_answer_folder_name": "ANSWER_17_*",
+    "link_answer_file_name": "ANSWER_17_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Volumes in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "To store only Delta transaction logs",
+        "B": "To replace Delta tables for structured data",
+        "C": "To provide governed storage for structured, semi-structured, and unstructured files",
+        "D": "To create Spark clusters automatically",
+        "E": "To manage SQL Warehouse configurations"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which prerequisites are required to use Volumes in Databricks?"
+        }
+      ],
+      "options": {
+        "A": "Hive Metastore and Databricks Runtime 10.4 LTS",
+        "B": "Unity Catalog enabled and Databricks Runtime 13.3 LTS or later",
+        "C": "Photon enabled and SQL Warehouse",
+        "D": "Azure Key Vault only",
+        "E": "Delta Live Tables enabled"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Where do Volumes fit within the Unity Catalog object hierarchy?"
+        }
+      ],
+      "options": {
+        "A": "Above the Metastore",
+        "B": "Alongside Catalogs",
+        "C": "As siblings of Tables within a Schema",
+        "D": "Under External Locations only",
+        "E": "Inside Storage Credentials"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement correctly describes a Managed Volume?"
+        }
+      ],
+      "options": {
+        "A": "It always requires a user-defined storage location.",
+        "B": "Unity Catalog automatically determines where files are stored.",
+        "C": "It stores only unstructured data.",
+        "D": "It requires an External Location.",
+        "E": "It cannot be accessed with DBUtils."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command is used to create directories inside a volume?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.fs.cp()",
+        "B": "dbutils.fs.head()",
+        "C": "dbutils.fs.mkdirs()",
+        "D": "dbutils.fs.mv()",
+        "E": "dbutils.fs.rm()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command is used to copy files into a Unity Catalog volume?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.fs.cp()",
+        "B": "dbutils.fs.put()",
+        "C": "dbutils.fs.mv()",
+        "D": "dbutils.fs.head()",
+        "E": "dbutils.fs.mount()"
+      },
+      "answer": "A",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What path format is used to access files stored in Unity Catalog volumes?"
+        }
+      ],
+      "options": {
+        "A": "/dbfs/catalog/schema/file",
+        "B": "/mnt/catalog/schema/volume/file",
+        "C": "/Volumes/catalog/schema/volume/path/file",
+        "D": "/storage/catalog/schema/file",
+        "E": "/unity/catalog/schema/file"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What additional component is required when creating an External Volume?"
+        }
+      ],
+      "options": {
+        "A": "A Spark Session",
+        "B": "A Delta Table",
+        "C": "A LOCATION pointing to external cloud storage",
+        "D": "A SQL Warehouse",
+        "E": "A Photon-enabled cluster"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when a Managed Volume is dropped?"
+        }
+      ],
+      "options": {
+        "A": "Only the metadata is removed.",
+        "B": "Only the files are removed.",
+        "C": "Both the metadata and stored files are permanently deleted.",
+        "D": "The volume is converted into an External Volume.",
+        "E": "The files are archived automatically."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when an External Volume is dropped?"
+        }
+      ],
+      "options": {
+        "A": "Both metadata and files are permanently deleted.",
+        "B": "Only the metadata is removed, while the files remain in external storage.",
+        "C": "The files are moved into a Managed Volume.",
+        "D": "Unity Catalog automatically recreates the volume.",
+        "E": "The storage credential is deleted along with the volume."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

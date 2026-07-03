@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">18 Databricks Utilities (DBUtils)</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/18_Databricks_Utilities_DBUtils",
+    "link_explanation_folder_name": "EXPLANATION_18_*",
+    "link_explanation_file_name": "EXPLANATION_18_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/18_Databricks_Utilities_DBUtils",
+    "link_answer_folder_name": "ANSWER_18_*",
+    "link_answer_file_name": "ANSWER_18_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which notebook languages support DBUtils?"
+        }
+      ],
+      "options": {
+        "A": "Python, Java, and SQL",
+        "B": "Python, Scala, and R",
+        "C": "SQL, Scala, and JavaScript",
+        "D": "Python, SQL, and Java",
+        "E": "R, JavaScript, and SQL"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command displays all available DBUtils modules?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.fs.help()",
+        "B": "dbutils.modules()",
+        "C": "dbutils.help()",
+        "D": "dbutils.list()",
+        "E": "dbutils.show()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils module is primarily used for file and storage operations?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.widgets",
+        "B": "dbutils.secrets",
+        "C": "dbutils.fs",
+        "D": "dbutils.notebook",
+        "E": "dbutils.jobs"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command lists the contents of a directory?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.fs.head()",
+        "B": "dbutils.fs.cp()",
+        "C": "dbutils.fs.mkdirs()",
+        "D": "dbutils.fs.ls()",
+        "E": "dbutils.fs.mv()"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command displays the beginning of a file without opening the entire file?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.fs.open()",
+        "B": "dbutils.fs.read()",
+        "C": "dbutils.fs.head()",
+        "D": "dbutils.fs.peek()",
+        "E": "dbutils.fs.preview()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of DBUtils Widgets?"
+        }
+      ],
+      "options": {
+        "A": "To optimize Spark jobs automatically",
+        "B": "To manage cluster permissions",
+        "C": "To allow notebooks to accept runtime input parameters",
+        "D": "To store Delta transaction logs",
+        "E": "To create Unity Catalog objects"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command retrieves the current value of a widget?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.widgets.value()",
+        "B": "dbutils.widgets.get()",
+        "C": "dbutils.widgets.read()",
+        "D": "dbutils.widgets.fetch()",
+        "E": "dbutils.widgets.input()"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of DBUtils Secrets?"
+        }
+      ],
+      "options": {
+        "A": "To optimize Delta Lake performance",
+        "B": "To create notebook widgets",
+        "C": "To securely access sensitive information such as passwords and API keys",
+        "D": "To schedule Databricks jobs",
+        "E": "To manage Spark executors"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils notebook command executes another notebook as part of a workflow?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.notebook.start()",
+        "B": "dbutils.notebook.execute()",
+        "C": "dbutils.notebook.run()",
+        "D": "dbutils.notebook.call()",
+        "E": "dbutils.notebook.open()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils notebook command returns a status value or result back to the calling notebook?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.notebook.return()",
+        "B": "dbutils.notebook.finish()",
+        "C": "dbutils.notebook.complete()",
+        "D": "dbutils.notebook.exit()",
+        "E": "dbutils.notebook.close()"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

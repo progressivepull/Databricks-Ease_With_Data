@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">10 Enable Unity Catalog and Set Up a Metastore</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/10_Enable_Unity_Catalog_and_Set_Up_a_Metastore",
+    "link_explanation_folder_name": "EXPLANATION_10_*",
+    "link_explanation_file_name": "EXPLANATION_10_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/10_Enable_Unity_Catalog_and_Set_Up_a_Metastore",
+    "link_answer_folder_name": "ANSWER_10_*",
+    "link_answer_file_name": "ANSWER_10_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the first component that must be created before Unity Catalog can be enabled?"
+        }
+      ],
+      "options": {
+        "A": "Catalog",
+        "B": "Schema",
+        "C": "Volume",
+        "D": "Metastore",
+        "E": "Storage Credential"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "According to Databricks best practices, how many metastores should generally be created per cloud region?"
+        }
+      ],
+      "options": {
+        "A": "One metastore per workspace",
+        "B": "One metastore per catalog",
+        "C": "One metastore per cloud region",
+        "D": "One metastore per user",
+        "E": "One metastore per storage account"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why is an Azure Storage Account created during Unity Catalog setup?"
+        }
+      ],
+      "options": {
+        "A": "To store Spark executors",
+        "B": "To host Databricks notebooks",
+        "C": "To provide managed storage for Unity Catalog tables",
+        "D": "To replace Azure Virtual Networks",
+        "E": "To store cluster logs only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Azure feature must be enabled to use Azure Data Lake Storage Gen2 (ADLS Gen2)?"
+        }
+      ],
+      "options": {
+        "A": "Soft Delete",
+        "B": "Geo-Redundant Storage (GRS)",
+        "C": "Hierarchical Namespace",
+        "D": "Customer-Managed Keys",
+        "E": "Private Endpoints"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of the Azure Databricks Access Connector?"
+        }
+      ],
+      "options": {
+        "A": "To create Spark clusters automatically",
+        "B": "To securely authenticate Databricks to Azure Storage using a Managed Identity",
+        "C": "To configure SQL Warehouses",
+        "D": "To manage notebook permissions",
+        "E": "To create Unity Catalog schemas"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Azure RBAC role must be assigned to the Access Connector so it can access the storage account?"
+        }
+      ],
+      "options": {
+        "A": "Reader",
+        "B": "Contributor",
+        "C": "Storage Blob Data Contributor",
+        "D": "Owner",
+        "E": "Storage Account Key Operator"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which two pieces of information are required when configuring the Metastore storage location?"
+        }
+      ],
+      "options": {
+        "A": "Cluster ID and Workspace URL",
+        "B": "ADLS Gen2 storage path and Access Connector Resource ID",
+        "C": "Subscription ID and Spark Version",
+        "D": "Notebook path and SQL Warehouse ID",
+        "E": "Catalog name and Schema name"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What additional step is required after creating a Metastore to enable Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Restart all compute clusters",
+        "B": "Create a Delta table",
+        "C": "Assign the Metastore to a Databricks workspace",
+        "D": "Configure Auto Loader",
+        "E": "Create an MLflow experiment"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Who automatically becomes the Metastore Administrator after creating the Metastore?"
+        }
+      ],
+      "options": {
+        "A": "Every Workspace Administrator",
+        "B": "The user who created the Metastore",
+        "C": "All users in the Databricks account",
+        "D": "The Azure Subscription Owner only",
+        "E": "Every Service Principal"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which new capability becomes available after Unity Catalog is successfully enabled and the workspace is refreshed?"
+        }
+      ],
+      "options": {
+        "A": "Automatic cluster scaling",
+        "B": "Azure DevOps integration",
+        "C": "Catalog creation and centralized workspace permissions",
+        "D": "Automatic Delta Live Tables deployment",
+        "E": "Built-in Auto Loader pipelines"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

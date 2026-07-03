@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">19 Orchestrating Notebook Jobs, Schedules, and Parameters in Databricks</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/19_Orchestrating_Notebook_Jobs_Schedules_and_Parameters_in_Databricks",
+    "link_explanation_folder_name": "EXPLANATION_19_*",
+    "link_explanation_file_name": "EXPLANATION_19_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/19_Orchestrating_Notebook_Jobs_Schedules_and_Parameters_in_Databricks",
+    "link_answer_folder_name": "ANSWER_19_*",
+    "link_answer_file_name": "ANSWER_19_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of the parent notebook in the lesson?"
+        }
+      ],
+      "options": {
+        "A": "To create Delta tables directly",
+        "B": "To read CSV files and filter employee data",
+        "C": "To pass parameters, execute the child notebook, and receive returned results",
+        "D": "To create Unity Catalog objects",
+        "E": "To manage Spark clusters"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command is used to create a notebook parameter (widget)?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.widgets.get()",
+        "B": "dbutils.notebook.run()",
+        "C": "dbutils.widgets.text()",
+        "D": "dbutils.notebook.exit()",
+        "E": "dbutils.fs.head()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command retrieves the value entered into a widget?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.widgets.read()",
+        "B": "dbutils.widgets.get()",
+        "C": "dbutils.widgets.value()",
+        "D": "dbutils.notebook.get()",
+        "E": "dbutils.fs.get()"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which two conditions are used by the child notebook to filter employee data?"
+        }
+      ],
+      "options": {
+        "A": "Department and Employee ID",
+        "B": "Salary and Department",
+        "C": "Department parameter and Active Record = 1",
+        "D": "Employee Name and Department",
+        "E": "Department and Hire Date"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How does the child notebook generate the name of the Delta table it writes?"
+        }
+      ],
+      "options": {
+        "A": "It always writes to the same table.",
+        "B": "It uses the employee ID as the table name.",
+        "C": "It dynamically builds the table name using the department parameter (for example, dev.branch.dept_sales).",
+        "D": "It creates a random table name.",
+        "E": "It stores all departments in a single Delta table."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command allows the child notebook to return a value to the parent notebook?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.widgets.exit()",
+        "B": "dbutils.fs.return()",
+        "C": "dbutils.notebook.exit()",
+        "D": "dbutils.notebook.complete()",
+        "E": "dbutils.widgets.get()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which DBUtils command is used by the parent notebook to execute the child notebook?"
+        }
+      ],
+      "options": {
+        "A": "dbutils.notebook.start()",
+        "B": "dbutils.notebook.run()",
+        "C": "dbutils.notebook.execute()",
+        "D": "dbutils.jobs.run()",
+        "E": "dbutils.widgets.run()"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How are parameters passed from the parent notebook to the child notebook?"
+        }
+      ],
+      "options": {
+        "A": "Through SQL variables only",
+        "B": "Through Spark configuration settings",
+        "C": "Using a Python dictionary passed to dbutils.notebook.run()",
+        "D": "Through Azure Active Directory groups",
+        "E": "By storing them in Delta tables"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following can be configured when scheduling a Databricks notebook as a recurring job?"
+        }
+      ],
+      "options": {
+        "A": "Only the notebook name",
+        "B": "Only the cluster type",
+        "C": "Frequency, widget parameters, notifications, time zone, and Cron expressions",
+        "D": "Only Spark configuration settings",
+        "E": "Only Unity Catalog permissions"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why is notebook parameterization using DBUtils widgets important?"
+        }
+      ],
+      "options": {
+        "A": "It permanently stores notebook outputs.",
+        "B": "It automatically creates Delta tables.",
+        "C": "It allows the same notebook to be reused with different runtime inputs without changing the code.",
+        "D": "It replaces Spark DataFrames.",
+        "E": "It enables Photon Acceleration automatically."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

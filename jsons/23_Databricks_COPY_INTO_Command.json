@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">23 Databricks COPY INTO Command</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/23_Databricks_COPY_INTO_Command",
+    "link_explanation_folder_name": "EXPLANATION_23_*",
+    "link_explanation_file_name": "EXPLANATION_23_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/23_Databricks_COPY_INTO_Command",
+    "link_answer_folder_name": "ANSWER_23_*",
+    "link_answer_file_name": "ANSWER_23_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of the COPY INTO command in Databricks?"
+        }
+      ],
+      "options": {
+        "A": "To optimize Delta tables",
+        "B": "To ingest files from cloud storage or Unity Catalog volumes into Delta tables",
+        "C": "To create Spark clusters automatically",
+        "D": "To replace Auto Loader in all scenarios",
+        "E": "To manage Unity Catalog permissions"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following file formats is supported by the COPY INTO command?"
+        }
+      ],
+      "options": {
+        "A": "CSV only",
+        "B": "CSV, JSON, Parquet, Avro, Text, and Binary files",
+        "C": "Delta files only",
+        "D": "XML only",
+        "E": "Excel (.xlsx) only"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What does it mean that COPY INTO is idempotent?"
+        }
+      ],
+      "options": {
+        "A": "It rewrites all files every time it runs.",
+        "B": "It creates duplicate records to ensure consistency.",
+        "C": "Running the command multiple times does not reload previously processed files.",
+        "D": "It requires manual cleanup after every execution.",
+        "E": "It automatically deletes the source files after loading."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why does the lesson create a placeholder Delta table before using COPY INTO?"
+        }
+      ],
+      "options": {
+        "A": "To permanently disable schema inference",
+        "B": "To create an empty table without a predefined schema so COPY INTO can infer it automatically",
+        "C": "To optimize query performance",
+        "D": "To convert CSV files into Parquet before loading",
+        "E": "To create a backup of the source files"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which capability allows COPY INTO to automatically create columns and detect data types when loading data into a placeholder table?"
+        }
+      ],
+      "options": {
+        "A": "Delta Time Travel",
+        "B": "Schema Inference",
+        "C": "Liquid Clustering",
+        "D": "Photon Acceleration",
+        "E": "Auto Scaling"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Where does COPY INTO maintain metadata about previously processed files?"
+        }
+      ],
+      "options": {
+        "A": "Azure Active Directory",
+        "B": "Unity Catalog Metastore only",
+        "C": "The Delta transaction log (_delta_log)",
+        "D": "Spark UI",
+        "E": "DBFS root directory"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How can COPY INTO perform simple transformations while loading data?"
+        }
+      ],
+      "options": {
+        "A": "By using Delta Live Tables only",
+        "B": "By wrapping the source data in a SELECT statement that performs transformations",
+        "C": "By enabling Photon",
+        "D": "By using VACUUM before loading",
+        "E": "By creating a temporary view first"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when a new source file is added to the landing folder and COPY INTO is executed again?"
+        }
+      ],
+      "options": {
+        "A": "All files are reprocessed.",
+        "B": "Only the new file is processed while previously loaded files are skipped.",
+        "C": "The Delta table is recreated from scratch.",
+        "D": "Existing records are deleted before loading.",
+        "E": "COPY INTO fails because duplicate files exist."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which feature of COPY INTO allows loading data into a table whose schema changes over time?"
+        }
+      ],
+      "options": {
+        "A": "Delta Cloning",
+        "B": "Schema Evolution",
+        "C": "Photon Execution",
+        "D": "Liquid Clustering",
+        "E": "Auto Scaling"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "According to the lesson, when should Auto Loader generally be preferred over COPY INTO?"
+        }
+      ],
+      "options": {
+        "A": "When loading a few CSV files once a month",
+        "B": "When processing small batch workloads with hundreds of files",
+        "C": "When handling millions of continuously arriving files and complex directory structures",
+        "D": "When creating placeholder Delta tables",
+        "E": "When reading data from Unity Catalog volumes only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

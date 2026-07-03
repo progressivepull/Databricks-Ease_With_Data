@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">14 Delta Tables, Utility Commands, Views, CTAS, Deep Clone, and Shallow Clone</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/14_Delta_Tables_Utility_Commands_Views_CTAS_Deep_Clone_and_Shallow_Clone",
+    "link_explanation_folder_name": "EXPLANATION_14_*",
+    "link_explanation_file_name": "EXPLANATION_14_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/14_Delta_Tables_Utility_Commands_Views_CTAS_Deep_Clone_and_Shallow_Clone",
+    "link_answer_folder_name": "ANSWER_14_*",
+    "link_answer_file_name": "ANSWER_14_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which SQL command lists all catalogs available in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "SHOW DATABASES;",
+        "B": "SHOW TABLES;",
+        "C": "SHOW CATALOGS;",
+        "D": "LIST CATALOGS;",
+        "E": "DESCRIBE CATALOGS;"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which PySpark command checks whether a table exists?"
+        }
+      ],
+      "options": {
+        "A": "spark.table.exists()",
+        "B": "spark.catalog.tableExists()",
+        "C": "spark.sql.tableExists()",
+        "D": "dbutils.fs.tableExists()",
+        "E": "spark.read.tableExists()"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary benefit of using CREATE TABLE IF NOT EXISTS?"
+        }
+      ],
+      "options": {
+        "A": "It automatically creates a backup table.",
+        "B": "It avoids errors if the table already exists.",
+        "C": "It converts the table into a Delta table.",
+        "D": "It deletes duplicate records automatically.",
+        "E": "It enables time travel by default."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which command displays the transaction history of a Delta table?"
+        }
+      ],
+      "options": {
+        "A": "SHOW HISTORY table_name;",
+        "B": "HISTORY TABLE table_name;",
+        "C": "DESCRIBE HISTORY table_name;",
+        "D": "LIST HISTORY table_name;",
+        "E": "SHOW VERSIONS table_name;"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary characteristic of a temporary view?"
+        }
+      ],
+      "options": {
+        "A": "It stores a physical copy of the data.",
+        "B": "It persists after the cluster is restarted.",
+        "C": "It exists only during the current compute session.",
+        "D": "It automatically becomes a permanent view.",
+        "E": "It cannot execute SQL queries."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How does a permanent view differ from a temporary view?"
+        }
+      ],
+      "options": {
+        "A": "It stores all table data physically.",
+        "B": "It persists after the compute cluster is restarted.",
+        "C": "It cannot reference Delta tables.",
+        "D": "It only supports Python queries.",
+        "E": "It requires Unity Catalog to be disabled."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement best describes CTAS (Create Table As Select)?"
+        }
+      ],
+      "options": {
+        "A": "It creates only a metadata reference to the original table.",
+        "B": "It creates a new table with copied data but may not preserve all Delta metadata.",
+        "C": "It creates only a SQL view.",
+        "D": "It copies only transaction history.",
+        "E": "It shares the same physical data files with the source table."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the main advantage of Deep Clone over CTAS?"
+        }
+      ],
+      "options": {
+        "A": "It requires no storage space.",
+        "B": "It copies only metadata.",
+        "C": "It preserves metadata, schema, table properties, and data, creating a true replica.",
+        "D": "It automatically updates whenever the source table changes.",
+        "E": "It creates only temporary copies."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement correctly describes a Shallow Clone?"
+        }
+      ],
+      "options": {
+        "A": "It immediately copies all physical data files.",
+        "B": "It copies metadata while initially referencing the original table's data files.",
+        "C": "It permanently synchronizes with all future changes in the source table.",
+        "D": "It cannot be queried until data is copied.",
+        "E": "It deletes the original table after cloning."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which operation can negatively impact a Shallow Clone because it initially references the original table's data files?"
+        }
+      ],
+      "options": {
+        "A": "OPTIMIZE",
+        "B": "MERGE",
+        "C": "DESCRIBE HISTORY",
+        "D": "VACUUM",
+        "E": "CREATE VIEW"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

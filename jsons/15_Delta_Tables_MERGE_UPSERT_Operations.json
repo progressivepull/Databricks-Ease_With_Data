@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">15 Delta Tables MERGE (UPSERT) Operations</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/15_Delta_Tables_MERGE_UPSERT_Operations",
+    "link_explanation_folder_name": "EXPLANATION_15_*",
+    "link_explanation_file_name": "EXPLANATION_15_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/15_Delta_Tables_MERGE_UPSERT_Operations",
+    "link_answer_folder_name": "ANSWER_15_*",
+    "link_answer_file_name": "ANSWER_15_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of the Delta Lake MERGE command?"
+        }
+      ],
+      "options": {
+        "A": "To permanently delete all records from a table",
+        "B": "To optimize Delta table storage",
+        "C": "To combine INSERT, UPDATE, and optional DELETE operations into a single atomic transaction",
+        "D": "To create Delta table backups",
+        "E": "To convert CSV files into Delta format"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which other names are commonly used for the MERGE operation?"
+        }
+      ],
+      "options": {
+        "A": "VACUUM and OPTIMIZE",
+        "B": "UPSERT and Slowly Changing Dimension (SCD) Type 1",
+        "C": "Deep Clone and Shallow Clone",
+        "D": "Time Travel and History Tracking",
+        "E": "Auto Loader and COPY INTO"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "In the lesson's MERGE example, which column is used as the business key to compare the source and target tables?"
+        }
+      ],
+      "options": {
+        "A": "EMP_NAME",
+        "B": "DEPARTMENT",
+        "C": "SALARY",
+        "D": "EMP_ID",
+        "E": "IS_ACTIVE"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which MERGE clause is executed when matching records are found in both the source and target tables?"
+        }
+      ],
+      "options": {
+        "A": "WHEN INSERTED",
+        "B": "WHEN FOUND",
+        "C": "WHEN MATCHED",
+        "D": "WHEN UPDATED",
+        "E": "WHEN EXISTS"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which MERGE clause inserts records that exist in the source table but not in the target table?"
+        }
+      ],
+      "options": {
+        "A": "WHEN MATCHED",
+        "B": "WHEN INSERTED",
+        "C": "WHEN NOT MATCHED",
+        "D": "WHEN NEW RECORD",
+        "E": "WHEN SOURCE EXISTS"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which MERGE clause handles records that exist in the target table but no longer exist in the source table?"
+        }
+      ],
+      "options": {
+        "A": "WHEN MATCHED BY TARGET",
+        "B": "WHEN NOT MATCHED BY SOURCE",
+        "C": "WHEN NOT MATCHED BY TARGET",
+        "D": "WHEN SOURCE MISSING",
+        "E": "WHEN DELETE REQUIRED"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary difference between a hard delete and a soft delete?"
+        }
+      ],
+      "options": {
+        "A": "Hard delete uses UPDATE, while soft delete uses INSERT.",
+        "B": "Hard delete preserves history, while soft delete removes it permanently.",
+        "C": "Hard delete permanently removes records, while soft delete marks them inactive and preserves history.",
+        "D": "Hard delete works only on Delta tables, while soft delete works only on Parquet tables.",
+        "E": "There is no functional difference between them."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which new column is added to support the soft delete implementation in the lesson?"
+        }
+      ],
+      "options": {
+        "A": "STATUS_CODE",
+        "B": "IS_DELETED",
+        "C": "ACTIVE_FLAG",
+        "D": "IS_ACTIVE",
+        "E": "RECORD_STATUS"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "After adding the IS_ACTIVE column, why can INSERT * no longer be used during the MERGE operation?"
+        }
+      ],
+      "options": {
+        "A": "MERGE does not support INSERT after UPDATE.",
+        "B": "Delta Lake disables wildcard inserts after schema changes.",
+        "C": "The source and target schemas no longer match, requiring explicit column mappings.",
+        "D": "INSERT * works only for external tables.",
+        "E": "The table must first be optimized."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What capability allows Delta Lake to add a new column such as IS_ACTIVE without rewriting existing data?"
+        }
+      ],
+      "options": {
+        "A": "Delta Time Travel",
+        "B": "Schema Evolution",
+        "C": "Auto Loader",
+        "D": "Liquid Clustering",
+        "E": "Photon Acceleration"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

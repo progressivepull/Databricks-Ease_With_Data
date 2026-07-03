@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">16 Delta Tables – Deletion Vectors and Liquid Clustering</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/16_Delta_Tables_Deletion_Vectors_and_Liquid_Clustering",
+    "link_explanation_folder_name": "EXPLANATION_16_*",
+    "link_explanation_file_name": "EXPLANATION_16_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/16_Delta_Tables_Deletion_Vectors_and_Liquid_Clustering",
+    "link_answer_folder_name": "ANSWER_16_*",
+    "link_answer_file_name": "ANSWER_16_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Deletion Vectors in Delta Lake?"
+        }
+      ],
+      "options": {
+        "A": "To compress Parquet files automatically",
+        "B": "To avoid rewriting entire Parquet files when rows are deleted",
+        "C": "To create Delta table backups",
+        "D": "To partition tables by date",
+        "E": "To replace the OPTIMIZE command"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How are deleted rows handled when Deletion Vectors are enabled?"
+        }
+      ],
+      "options": {
+        "A": "They are immediately removed from the Parquet file.",
+        "B": "They are copied into a new Delta table.",
+        "C": "They are marked as deleted, and queries ignore them until physical cleanup occurs.",
+        "D": "They are moved into the Hive Metastore.",
+        "E": "They are converted into NULL values."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which command is commonly used to physically remove rows that were marked by Deletion Vectors?"
+        }
+      ],
+      "options": {
+        "A": "VACUUM table_name;",
+        "B": "MERGE table_name;",
+        "C": "OPTIMIZE table_name;",
+        "D": "CLUSTER BY table_name;",
+        "E": "ANALYZE TABLE table_name;"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which table property controls whether Deletion Vectors are enabled?"
+        }
+      ],
+      "options": {
+        "A": "delta.enablePhoton",
+        "B": "delta.enableDeletionVectors",
+        "C": "delta.autoOptimize",
+        "D": "delta.enableClusterBy",
+        "E": "delta.optimizeWrite"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What information can be observed in DESCRIBE HISTORY after performing DELETE operations?"
+        }
+      ],
+      "options": {
+        "A": "Only the table owner",
+        "B": "Only the storage location",
+        "C": "Operation metrics such as files rewritten and deletion vectors added",
+        "D": "Only SQL query history",
+        "E": "Azure subscription information"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Delta Lake and Databricks Runtime versions are required to use Deletion Vectors?"
+        }
+      ],
+      "options": {
+        "A": "Delta Lake 1.0+ and DBR 10.4 LTS+",
+        "B": "Delta Lake 2.0+ and DBR 11.0+",
+        "C": "Delta Lake 2.3+ and Databricks Runtime 12.2 LTS+",
+        "D": "Delta Lake 3.1+ and DBR 13.3 LTS+ only",
+        "E": "Any Delta Lake version with Photon enabled"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary advantage of Liquid Clustering over traditional partitioning and Z-Ordering?"
+        }
+      ],
+      "options": {
+        "A": "It completely eliminates Delta tables.",
+        "B": "It automatically reorganizes data as new records arrive, reducing manual maintenance.",
+        "C": "It requires more manual repartitioning.",
+        "D": "It works only with JSON files.",
+        "E": "It permanently disables OPTIMIZE."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "In which scenario is Liquid Clustering especially recommended?"
+        }
+      ],
+      "options": {
+        "A": "Small datasets with low-cardinality columns",
+        "B": "Tables containing only a few rows",
+        "C": "Large datasets with high-cardinality columns and frequent filtering or joins",
+        "D": "Tables that never receive new data",
+        "E": "Temporary views only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which SQL command enables Liquid Clustering on an existing Delta table?"
+        }
+      ],
+      "options": {
+        "A": "ENABLE CLUSTER invoice_number;",
+        "B": "CREATE CLUSTER invoice_number;",
+        "C": "ALTER TABLE table_name CLUSTER BY (invoice_number);",
+        "D": "OPTIMIZE TABLE CLUSTER invoice_number;",
+        "E": "CREATE INDEX invoice_number;"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is one limitation when selecting clustering columns for Liquid Clustering?"
+        }
+      ],
+      "options": {
+        "A": "Only one clustering column is allowed.",
+        "B": "Clustering columns must always be numeric.",
+        "C": "Clustering columns must appear within the first 32 columns of the table.",
+        "D": "Clustering can only be enabled during table creation.",
+        "E": "Clustering works only on managed tables."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

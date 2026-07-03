@@ -1,0 +1,290 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">13 Managed & External Tables in Unity Catalog vs. Legacy Hive Metastore</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/13_Managed_and_External_Tables_in_Unity_Catalog_vs_Legacy_Hive_Metastore",
+    "link_explanation_folder_name": "EXPLANATION_13_*",
+    "link_explanation_file_name": "EXPLANATION_13_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/13_Managed_and_External_Tables_in_Unity_Catalog_vs_Legacy_Hive_Metastore",
+    "link_answer_folder_name": "ANSWER_13_*",
+    "link_answer_file_name": "ANSWER_13_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Before creating an external table in Unity Catalog, what must first be created in Azure Data Lake Storage (ADLS)?"
+        }
+      ],
+      "options": {
+        "A": "A SQL Warehouse",
+        "B": "A dedicated storage folder for external table data",
+        "C": "A Delta Live Table pipeline",
+        "D": "A Unity Catalog metastore",
+        "E": "A Databricks notebook"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which components are required to register an External Location in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Catalog and Schema",
+        "B": "Cluster and Notebook",
+        "C": "ADLS storage path, Storage Credential, and Managed Identity (Access Connector)",
+        "D": "Delta Table and Volume",
+        "E": "Metastore and Workspace"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Where is the data for a managed table stored when no storage location is specified?"
+        }
+      ],
+      "options": {
+        "A": "In a user-defined ADLS directory",
+        "B": "In Azure Key Vault",
+        "C": "In Unity Catalog's managed storage location (catalog or metastore managed location)",
+        "D": "In GitHub repositories",
+        "E": "Inside the notebook workspace"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary difference between a managed table and an external table in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Managed tables cannot store Delta data.",
+        "B": "External tables store metadata only.",
+        "C": "Managed tables store data in Unity Catalog–managed storage, while external tables store data in a user-defined ADLS location.",
+        "D": "Managed tables require SQL, while external tables require Python.",
+        "E": "External tables cannot be queried."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How does Unity Catalog handle a managed table after it is dropped?"
+        }
+      ],
+      "options": {
+        "A": "Both metadata and data are immediately deleted.",
+        "B": "Only metadata remains.",
+        "C": "Metadata is removed, but data files are temporarily retained for recovery.",
+        "D": "The table automatically becomes an external table.",
+        "E": "The table is archived permanently."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which SQL command lists recently dropped tables that are still eligible for recovery?"
+        }
+      ],
+      "options": {
+        "A": "SHOW TABLES HISTORY",
+        "B": "SHOW DROPPED OBJECTS",
+        "C": "SHOW TABLES DROPPED IN schema_name",
+        "D": "LIST RECOVERABLE TABLES",
+        "E": "DESCRIBE DROPPED TABLES"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which command restores a dropped table during the retention period?"
+        }
+      ],
+      "options": {
+        "A": "RESTORE TABLE",
+        "B": "RECOVER TABLE",
+        "C": "UNDROP TABLE",
+        "D": "CREATE TABLE RESTORE",
+        "E": "RELOAD TABLE"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "For how long does Unity Catalog retain dropped managed tables so they can be recovered?"
+        }
+      ],
+      "options": {
+        "A": "24 hours",
+        "B": "3 days",
+        "C": "5 days",
+        "D": "7 days",
+        "E": "30 days"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "When an external table is dropped in Unity Catalog, what happens to the physical data files?"
+        }
+      ],
+      "options": {
+        "A": "They are immediately deleted.",
+        "B": "They are retained permanently in the external storage location.",
+        "C": "They are moved to Unity Catalog managed storage.",
+        "D": "They are compressed into Delta logs.",
+        "E": "They are archived in the Control Plane."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which capability is available in Unity Catalog but not in the legacy Hive Metastore?"
+        }
+      ],
+      "options": {
+        "A": "Managed tables",
+        "B": "External tables",
+        "C": "UNDROP TABLE for recovering dropped tables",
+        "D": "Delta Lake support",
+        "E": "SQL queries"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

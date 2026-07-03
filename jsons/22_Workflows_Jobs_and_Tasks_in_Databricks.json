@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">22 Workflows, Jobs, and Tasks in Databricks</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/22_Workflows_Jobs_and_Tasks_in_Databricks",
+    "link_explanation_folder_name": "EXPLANATION_22_*",
+    "link_explanation_file_name": "EXPLANATION_22_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/22_Workflows_Jobs_and_Tasks_in_Databricks",
+    "link_answer_folder_name": "ANSWER_22_*",
+    "link_answer_file_name": "ANSWER_22_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Databricks Workflows?"
+        }
+      ],
+      "options": {
+        "A": "To optimize Delta Lake storage only",
+        "B": "To orchestrate, schedule, and automate multi-step data pipelines",
+        "C": "To replace Unity Catalog",
+        "D": "To create Spark clusters automatically for notebooks only",
+        "E": "To manage Azure subscriptions"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "In Databricks Workflows, what is the relationship between a Job and a Task?"
+        }
+      ],
+      "options": {
+        "A": "A Task contains multiple Jobs.",
+        "B": "A Job is a complete workflow composed of one or more Tasks.",
+        "C": "Jobs and Tasks are identical concepts.",
+        "D": "A Task can only contain SQL code.",
+        "E": "A Job can contain only one Task."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following is a supported Databricks Workflow task type?"
+        }
+      ],
+      "options": {
+        "A": "Kubernetes Deployment",
+        "B": "Azure Logic App",
+        "C": "Delta Live Tables (DLT)",
+        "D": "Azure Function",
+        "E": "Docker Compose"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Where can the source code for a notebook task be stored?"
+        }
+      ],
+      "options": {
+        "A": "Only in the Databricks Workspace",
+        "B": "Only in Git repositories",
+        "C": "Either in the Databricks Workspace or a Git repository",
+        "D": "Only in Azure Blob Storage",
+        "E": "Only in DBFS"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is a major advantage of using a Job Compute Cluster?"
+        }
+      ],
+      "options": {
+        "A": "It permanently stays online after the workflow finishes.",
+        "B": "It automatically creates Unity Catalog objects.",
+        "C": "It is automatically created when the workflow starts and terminated when it completes or fails.",
+        "D": "It eliminates the need for Delta tables.",
+        "E": "It supports only SQL workloads."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How are notebook parameters typically created so that Workflow parameters can populate them?"
+        }
+      ],
+      "options": {
+        "A": "Using Spark configuration files",
+        "B": "Using Delta table properties",
+        "C": "Using dbutils.widgets",
+        "D": "Using dbutils.fs",
+        "E": "Using DESCRIBE HISTORY"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the difference between Task Parameters and Job Parameters?"
+        }
+      ],
+      "options": {
+        "A": "Task Parameters are shared across all jobs, while Job Parameters apply only to SQL tasks.",
+        "B": "Job Parameters are automatically available to every task, while Task Parameters apply only to individual tasks.",
+        "C": "Task Parameters can only be used with notebooks, while Job Parameters can only be used with Python scripts.",
+        "D": "There is no difference between them.",
+        "E": "Job Parameters are supported only for Delta Live Tables."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when Queueing is enabled and compute resources are unavailable?"
+        }
+      ],
+      "options": {
+        "A": "The job immediately fails.",
+        "B": "The workflow automatically switches to Serverless Compute.",
+        "C": "The job waits for resources and can remain queued for up to 48 hours.",
+        "D": "The job skips all dependent tasks.",
+        "E": "The job is automatically deleted."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What does the Maximum Concurrent Runs setting control?"
+        }
+      ],
+      "options": {
+        "A": "The number of worker nodes in a cluster",
+        "B": "The number of notebooks that can be edited simultaneously",
+        "C": "The maximum number of simultaneous executions of the same workflow job",
+        "D": "The number of SQL queries executed per second",
+        "E": "The number of clusters created per workspace"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "In the example workflow from the lesson, what happens if the current day is not Sunday?"
+        }
+      ],
+      "options": {
+        "A": "Employee data is processed for every department.",
+        "B": "The workflow automatically retries.",
+        "C": "The workflow ends without processing employee data.",
+        "D": "A Delta Live Table is created.",
+        "E": "The workflow creates a new Job Cluster and waits."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

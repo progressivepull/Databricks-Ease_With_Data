@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Split Microsoft Word Document</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+<style>
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    margin:40px;
+}
+
+label{
+    display:inline-block;
+    width:180px;
+    font-weight:bold;
+}
+
+input[type=text]{
+    width:250px;
+    padding:6px;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+#status{
+    margin-top:20px;
+    font-weight:bold;
+    color:green;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Split Microsoft Word Document</h2>
+
+<p>Select a Microsoft Word (.docx) file.</p>
+
+<input type="file"
+       id="file"
+       accept=".docx">
+
+<br><br>
+
+<label>Split Word</label>
+
+<input
+    type="text"
+    id="splitWord"
+    value="Question">
+
+<br><br>
+
+<label>Output Prefix</label>
+
+<input
+    type="text"
+    id="filePrefix"
+    value="QUESTION_">
+
+<br><br>
+
+<button onclick="splitDoc()">
+Split Document
+</button>
+
+<div id="status"></div>
+
+<script>
+
+async function splitDoc(){
+
+    const file=document.getElementById("file").files[0];
+
+    if(!file){
+        alert("Please select a DOCX file.");
+        return;
+    }
+
+    const splitWord=document
+        .getElementById("splitWord")
+        .value
+        .trim();
+
+    if(splitWord===""){
+        alert("Enter a split word.");
+        return;
+    }
+
+    const filePrefix=document
+        .getElementById("filePrefix")
+        .value
+        .trim();
+
+    if(filePrefix===""){
+        alert("Enter an output filename prefix.");
+        return;
+    }
+
+    document.getElementById("status").innerHTML="Reading document...";
+
+    const buffer=await file.arrayBuffer();
+
+    const zip=await JSZip.loadAsync(buffer);
+
+    const xml=await zip.file("word/document.xml").async("string");
+
+    const parser=new DOMParser();
+
+    const xmlDoc=parser.parseFromString(
+        xml,
+        "application/xml"
+    );
+
+    const body=xmlDoc.getElementsByTagName("w:body")[0];
+
+    const children=[...body.children];
+
+    const regex=new RegExp(
+        "^\\s*"+
+        splitWord.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+
+        "\\b",
+        "i"
+    );
+
+    let currentNodes=[];
+
+    let fileNumber=0;
+
+    for(const node of children){
+
+        let text="";
+
+        if(node.tagName==="w:p"){
+
+            const texts=node.getElementsByTagName("w:t");
+
+            for(const t of texts){
+                text+=t.textContent;
+            }
+
+        }
+
+        if(regex.test(text)){
+
+            if(currentNodes.length>0){
+
+                fileNumber++;
+
+                await saveDoc(
+                    zip,
+                    currentNodes,
+                    fileNumber,
+                    filePrefix
+                );
+
+            }
+
+            currentNodes=[];
+
+        }
+
+        currentNodes.push(
+            node.cloneNode(true)
+        );
+
+    }
+
+    if(currentNodes.length){
+
+        fileNumber++;
+
+        await saveDoc(
+            zip,
+            currentNodes,
+            fileNumber,
+            filePrefix
+        );
+
+    }
+
+    document.getElementById("status").innerHTML=
+        "Finished. Created "+fileNumber+" document(s).";
+
+}
+
+async function saveDoc(
+    originalZip,
+    nodes,
+    number,
+    filePrefix
+){
+
+    const newZip=new JSZip();
+
+    for(const filename of Object.keys(originalZip.files)){
+
+        const entry=originalZip.file(filename);
+
+        if(entry){
+
+            newZip.file(
+                filename,
+                await entry.async("uint8array")
+            );
+
+        }
+
+    }
+
+    const xml=await newZip
+        .file("word/document.xml")
+        .async("string");
+
+    const parser=new DOMParser();
+
+    const doc=parser.parseFromString(
+        xml,
+        "application/xml"
+    );
+
+    const body=doc.getElementsByTagName("w:body")[0];
+
+    while(body.firstChild){
+        body.removeChild(body.firstChild);
+    }
+
+    for(const node of nodes){
+
+		body.appendChild(
+			doc.importNode(node,true)
+		);
+
+    }
+
+    // Keep original section properties if they were removed.
+    // This helps Word open the split documents.
+    if(!body.querySelector("w\\:sectPr")){
+
+        const originalParser=new DOMParser();
+
+        const originalDoc=originalParser.parseFromString(
+            await originalZip.file("word/document.xml").async("string"),
+            "application/xml"
+        );
+
+        const originalBody=
+            originalDoc.getElementsByTagName("w:body")[0];
+
+        const sectPr=
+            originalBody.querySelector("w\\:sectPr");
+
+        if(sectPr){
+
+            body.appendChild(
+                doc.importNode(sectPr,true)
+            );
+
+        }
+
+    }
+
+    const serializer=new XMLSerializer();
+
+    newZip.file(
+        "word/document.xml",
+        serializer.serializeToString(doc)
+    );
+
+    const blob=await newZip.generateAsync({
+        type:"blob"
+    });
+
+    const url=URL.createObjectURL(blob);
+
+    const a=document.createElement("a");
+
+    a.href=url;
+
+    a.download=filePrefix+number+".docx";
+
+    document.body.appendChild(a);
+
+    a.click();
+
+    document.body.removeChild(a);
+
+    URL.revokeObjectURL(url);
+
+}
+
+</script>
+
+</body>
+</html>

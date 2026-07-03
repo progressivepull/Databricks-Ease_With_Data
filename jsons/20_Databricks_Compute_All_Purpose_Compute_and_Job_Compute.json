@@ -1,0 +1,289 @@
+{
+  "config": {
+    "version": "1.0",
+    "exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">20 Databricks Compute – All-Purpose Compute and Job Compute</div>",
+    "link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/20_Databricks_Compute_All_Purpose_Compute_and_Job_Compute",
+    "link_explanation_folder_name": "EXPLANATION_20_*",
+    "link_explanation_file_name": "EXPLANATION_20_*",
+    "link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/20_Databricks_Compute_All_Purpose_Compute_and_Job_Compute",
+    "link_answer_folder_name": "ANSWER_20_*",
+    "link_answer_file_name": "ANSWER_20_*",
+    "link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+    "readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+    "shuffle_questions": true,
+    "shuffle_options": true,
+    "time_limit_minutes": 60
+  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of a Databricks Compute (Cluster)?"
+        }
+      ],
+      "options": {
+        "A": "To store Unity Catalog metadata",
+        "B": "To execute notebooks, SQL queries, and workflows",
+        "C": "To manage Azure subscriptions",
+        "D": "To replace Delta Lake storage",
+        "E": "To create Virtual Networks"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which component of a Databricks cluster is responsible for coordinating work and running the Spark Driver?"
+        }
+      ],
+      "options": {
+        "A": "Worker Node",
+        "B": "Executor Node",
+        "C": "Driver Node",
+        "D": "Photon Engine",
+        "E": "SQL Warehouse"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which type of compute is best suited for interactive notebook development and manual execution?"
+        }
+      ],
+      "options": {
+        "A": "Job Compute",
+        "B": "Serverless Compute",
+        "C": "All-Purpose Compute",
+        "D": "SQL Warehouse",
+        "E": "Delta Live Compute"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary advantage of Job Compute over All-Purpose Compute?"
+        }
+      ],
+      "options": {
+        "A": "It supports only SQL workloads.",
+        "B": "It remains running permanently after the job completes.",
+        "C": "It is automatically created when a workflow starts and terminated when it finishes.",
+        "D": "It requires manual startup before every scheduled job.",
+        "E": "It does not support Unity Catalog."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Access Mode supports multiple users while remaining compatible with Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Single User only",
+        "B": "No Isolation Shared",
+        "C": "Shared",
+        "D": "Legacy Shared",
+        "E": "Driver Only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the recommendation when selecting a Databricks Runtime (DBR) version?"
+        }
+      ],
+      "options": {
+        "A": "Always use the oldest supported version.",
+        "B": "Use the latest Long-Term Support (LTS) version whenever possible.",
+        "C": "Use only ML runtimes.",
+        "D": "Use Photon regardless of runtime version.",
+        "E": "Always select the preview runtime."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary benefit of enabling Photon?"
+        }
+      ],
+      "options": {
+        "A": "It reduces the number of worker nodes to zero.",
+        "B": "It automatically creates Unity Catalog objects.",
+        "C": "It improves ETL, SQL, streaming, and data science performance through a high-performance execution engine.",
+        "D": "It eliminates the need for Spark.",
+        "E": "It disables Auto Scaling."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What does Auto Scaling do for a Databricks cluster?"
+        }
+      ],
+      "options": {
+        "A": "Automatically upgrades the Databricks Runtime version.",
+        "B": "Automatically adjusts the number of worker nodes based on workload demand.",
+        "C": "Automatically converts All-Purpose Compute into Job Compute.",
+        "D": "Automatically enables Photon.",
+        "E": "Automatically creates notebooks."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why is Auto Termination considered an important cost-saving feature?"
+        }
+      ],
+      "options": {
+        "A": "It permanently deletes inactive clusters.",
+        "B": "It automatically reduces Spark executor memory.",
+        "C": "It shuts down idle clusters after a configured period, reducing unnecessary cloud costs.",
+        "D": "It disables unused notebooks.",
+        "E": "It removes unused Delta tables."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which cluster permission allows a user to attach notebooks and execute code, but not start, stop, edit, or delete the cluster?"
+        }
+      ],
+      "options": {
+        "A": "Can Manage",
+        "B": "Can Restart",
+        "C": "Can Attach To",
+        "D": "Cluster Owner",
+        "E": "Workspace Administrator"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}
