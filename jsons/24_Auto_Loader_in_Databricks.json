@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">24 Auto Loader in Databricks</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/24_Auto_Loader_in_Databricks",
+		"link_explanation_folder_name": "EXPLANATION_24_*",
+		"link_explanation_file_name": "EXPLANATION_24_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/24_Auto_Loader_in_Databricks",
+		"link_answer_folder_name": "ANSWER_24_*",
+		"link_answer_file_name": "ANSWER_24_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Auto Loader in Databricks?"
+        }
+      ],
+      "options": {
+        "A": "To manually copy files from local machines into DBFS",
+        "B": "To efficiently and incrementally ingest new files from cloud storage into Delta Lake tables",
+        "C": "To replace Unity Catalog metadata management",
+        "D": "To optimize SQL query performance on Delta tables",
+        "E": "To create Spark clusters automatically"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which technology is Auto Loader built on?"
+        }
+      ],
+      "options": {
+        "A": "Delta Live Tables only",
+        "B": "Databricks SQL Warehouses",
+        "C": "Structured Streaming using the CloudFiles source",
+        "D": "Apache Kafka Connect",
+        "E": "MLflow Tracking"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How does Auto Loader achieve exactly-once processing?"
+        }
+      ],
+      "options": {
+        "A": "By deleting processed files after ingestion",
+        "B": "By storing processed file metadata in a checkpoint directory using RocksDB",
+        "C": "By renaming processed files with a timestamp",
+        "D": "By loading every file twice and comparing results",
+        "E": "By requiring manual tracking of processed files"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of the checkpoint directory in Auto Loader?"
+        }
+      ],
+      "options": {
+        "A": "To store Delta Lake transaction logs only",
+        "B": "To cache Spark executors for faster processing",
+        "C": "To store progress, schema information, processed file metadata, and RocksDB data",
+        "D": "To permanently archive source files after processing",
+        "E": "To store Unity Catalog permissions"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Auto Loader option specifies where inferred schemas are stored?"
+        }
+      ],
+      "options": {
+        "A": "cloudFiles.checkpointPath",
+        "B": "cloudFiles.schemaHints",
+        "C": "cloudFiles.schemaLocation",
+        "D": "mergeSchema",
+        "E": "cloudFiles.useNotifications"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement correctly describes Schema Hints in Auto Loader?"
+        }
+      ],
+      "options": {
+        "A": "Every column must be explicitly defined.",
+        "B": "Schema hints completely disable schema inference.",
+        "C": "Only selected columns are overridden while the remaining columns are inferred automatically.",
+        "D": "Schema hints are supported only for JSON files.",
+        "E": "Schema hints prevent schema evolution entirely."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which file detection mode is the default behavior for Auto Loader?"
+        }
+      ],
+      "options": {
+        "A": "Azure Event Grid notifications",
+        "B": "AWS SQS notifications",
+        "C": "Google Pub/Sub notifications",
+        "D": "Directory Listing",
+        "E": "Kafka Event Streaming"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Auto Loader option enables event-based file detection using cloud notification services?"
+        }
+      ],
+      "options": {
+        "A": "cloudFiles.enableStreaming=true",
+        "B": "cloudFiles.useNotifications=true",
+        "C": "cloudFiles.eventMode=true",
+        "D": "cloudFiles.notificationService=eventGrid",
+        "E": "cloudFiles.incremental=true"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which trigger should be used when Auto Loader needs to process all currently available files and then stop automatically?"
+        }
+      ],
+      "options": {
+        "A": ".trigger(processingTime=\"30 seconds\")",
+        "B": ".trigger(continuous=True)",
+        "C": ".trigger(availableNow=True)",
+        "D": ".trigger(batchMode=True)",
+        "E": ".trigger(once=False)"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which schema evolution mode stores unexpected columns in the _rescued_data column without failing the stream?"
+        }
+      ],
+      "options": {
+        "A": "addNewColumns",
+        "B": "none",
+        "C": "mergeSchema",
+        "D": "failOnNewColumns",
+        "E": "rescue"
+      },
+      "answer": "E",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

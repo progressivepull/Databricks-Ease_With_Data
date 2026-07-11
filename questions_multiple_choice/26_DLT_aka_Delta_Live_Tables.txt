@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of Delta Live Tables (DLT) in Databricks?
+A. To manually configure Spark clusters for every ETL job
+B. To simplify ETL development by automatically managing pipeline operations while developers define transformations
+C. To replace Delta Lake with Parquet files
+D. To create dashboards directly from raw data
+E. To manage Azure storage accounts only
+Correct Answer: B. To simplify ETL development by automatically managing pipeline operations while developers define transformations
+________________________________________
+Question 2
+Which of the following operational tasks is automatically managed by Delta Live Tables?
+A. Writing SQL queries
+B. Creating business logic
+C. Pipeline orchestration, cluster management, and dependency tracking
+D. Designing Power BI reports
+E. Creating cloud storage accounts
+Correct Answer: C. Pipeline orchestration, cluster management, and dependency tracking
+________________________________________
+Question 3
+Which DLT dataset type is designed for continuously arriving data and incremental processing?
+A. View
+B. Materialized View
+C. Temporary Table
+D. Streaming Table
+E. Delta Cache
+Correct Answer: D. Streaming Table
+________________________________________
+Question 4
+Which method is typically used to read data that will populate a Streaming Table in DLT?
+A. spark.sql()
+B. spark.read.table()
+C. spark.readStream.table()
+D. spark.read.csv()
+E. spark.table()
+Correct Answer: C. spark.readStream.table()
+________________________________________
+Question 5
+What is the primary purpose of a DLT View?
+A. To permanently store aggregated results in Unity Catalog
+B. To replace Streaming Tables in production pipelines
+C. To create temporary transformations and intermediate logic during pipeline execution
+D. To automatically optimize Delta tables
+E. To archive historical pipeline data
+Correct Answer: C. To create temporary transformations and intermediate logic during pipeline execution
+________________________________________
+Question 6
+Which keyword is used to reference datasets created earlier within the same Delta Live Tables pipeline?
+A. CURRENT
+B. DELTA
+C. LIVE
+D. PIPELINE
+E. STREAM
+Correct Answer: C. LIVE
+________________________________________
+Question 7
+In the Medallion Architecture demonstrated in the lesson, what is the typical order of data refinement?
+A. Gold → Silver → Bronze
+B. Bronze → Gold → Silver
+C. Silver → Bronze → Gold
+D. Bronze → Silver → Gold
+E. Raw → Gold → Bronze
+Correct Answer: D. Bronze → Silver → Gold
+________________________________________
+Question 8
+Which Delta Live Tables edition includes both Change Data Capture (CDC) and Data Quality Expectations?
+A. Community Edition
+B. Core
+C. Standard
+D. Pro
+E. Advanced
+Correct Answer: E. Advanced
+________________________________________
+Question 9
+What is the primary difference between Development Mode and Production Mode in DLT?
+A. Development Mode supports only batch processing.
+B. Production Mode disables Unity Catalog integration.
+C. Development Mode keeps the cluster running for faster debugging, while Production Mode automatically terminates the cluster after execution.
+D. Production Mode cannot run Streaming Tables.
+E. Development Mode supports only SQL pipelines.
+Correct Answer: C. Development Mode keeps the cluster running for faster debugging, while Production Mode automatically terminates the cluster after execution.
+________________________________________
+Question 10
+What information does the automatically generated DLT Directed Acyclic Graph (DAG) provide?
+A. Only cluster CPU and memory usage
+B. Dataset dependencies, processing order, record counts, and execution progress
+C. Source code history for every notebook
+D. Cloud storage pricing information
+E. User permissions for Unity Catalog
+Correct Answer: B. Dataset dependencies, processing order, record counts, and execution progress
+

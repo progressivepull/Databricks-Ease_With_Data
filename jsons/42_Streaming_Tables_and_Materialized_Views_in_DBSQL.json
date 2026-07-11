@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">42 Streaming Tables and Materialized Views in DBSQL</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/42_Streaming_Tables_and_Materialized_Views_in_DBSQL",
+		"link_explanation_folder_name": "EXPLANATION_42_*",
+		"link_explanation_file_name": "EXPLANATION_42_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/42_Streaming_Tables_and_Materialized_Views_in_DBSQL",
+		"link_answer_folder_name": "ANSWER_42_*",
+		"link_answer_file_name": "ANSWER_42_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of a Streaming Table in Databricks SQL (DBSQL)?"
+        }
+      ],
+      "options": {
+        "A": "To permanently archive Delta transaction logs",
+        "B": "To continuously ingest incremental data from a streaming source",
+        "C": "To replace SQL Warehouses for query execution",
+        "D": "To store only precomputed aggregations for dashboards",
+        "E": "To automatically create Unity Catalog catalogs"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Although Streaming Tables and Materialized Views are created using SQL in DBSQL, what technology manages refreshes and incremental processing behind the scenes?"
+        }
+      ],
+      "options": {
+        "A": "Apache Airflow",
+        "B": "Databricks Workflows",
+        "C": "Delta Live Tables (DLT)",
+        "D": "Apache Hive",
+        "E": "Unity Catalog"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of a Materialized View?"
+        }
+      ],
+      "options": {
+        "A": "To continuously ingest streaming files into Delta tables",
+        "B": "To replace Unity Catalog permissions",
+        "C": "To store precomputed query results for faster analytics",
+        "D": "To automatically create SQL Warehouses",
+        "E": "To manage Spark cluster configurations"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which component is required to create Streaming Tables and Materialized Views directly in Databricks SQL?"
+        }
+      ],
+      "options": {
+        "A": "Spark Driver Node",
+        "B": "Unity Catalog Metastore",
+        "C": "SQL Warehouse",
+        "D": "MLflow Server",
+        "E": "Databricks Workflow Job"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which SQL function is demonstrated for reading CSV files from Unity Catalog Volumes and cloud storage?"
+        }
+      ],
+      "options": {
+        "A": "LOAD_DATA()",
+        "B": "COPY_FILES()",
+        "C": "READ_FILES()",
+        "D": "STREAM_SOURCE()",
+        "E": "IMPORT_TABLE()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the effect of setting includeExistingFiles = false when creating a Streaming Table?"
+        }
+      ],
+      "options": {
+        "A": "All existing files are reprocessed during every refresh.",
+        "B": "Previously processed files are ignored, and only newly arriving files are processed.",
+        "C": "Streaming Tables cannot be refreshed incrementally.",
+        "D": "The Streaming Table performs a full refresh every hour.",
+        "E": "Materialized Views are refreshed automatically."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which SQL command performs a full reload of all source data for a Streaming Table?"
+        }
+      ],
+      "options": {
+        "A": "REFRESH MATERIALIZED VIEW",
+        "B": "REFRESH STREAMING TABLE",
+        "C": "REFRESH STREAMING TABLE FULL",
+        "D": "REBUILD STREAMING TABLE",
+        "E": "ALTER STREAMING TABLE REFRESH"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why do Materialized Views improve dashboard and reporting performance?"
+        }
+      ],
+      "options": {
+        "A": "They automatically create Spark clusters.",
+        "B": "They eliminate the need for SQL Warehouses.",
+        "C": "They store precomputed query results instead of recomputing expensive aggregations each time.",
+        "D": "They continuously ingest streaming files into Delta tables.",
+        "E": "They duplicate all source tables in memory."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What optimization does Databricks perform when a Materialized View refresh detects no new data?"
+        }
+      ],
+      "options": {
+        "A": "It automatically performs a full table recomputation.",
+        "B": "It deletes all cached results.",
+        "C": "It performs a No Operation (NO OP), skipping unnecessary processing.",
+        "D": "It rebuilds the DLT pipeline from scratch.",
+        "E": "It converts the Materialized View into a Streaming Table."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "According to best practices, what is the correct refresh order when using both Streaming Tables and Materialized Views?"
+        }
+      ],
+      "options": {
+        "A": "Refresh the Materialized View first, then the Streaming Table.",
+        "B": "Refresh both simultaneously.",
+        "C": "Refresh the Streaming Table first, then refresh the Materialized View.",
+        "D": "Only refresh the Materialized View because the Streaming Table refreshes automatically.",
+        "E": "Perform a full refresh of both every time."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

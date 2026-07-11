@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of Databricks SQL (DBSQL)?
+A. To create Spark clusters for ETL pipelines only
+B. To provide a SQL analytics service for querying data, building reports, dashboards, and connecting BI tools
+C. To manage Unity Catalog permissions exclusively
+D. To replace Delta Lake storage
+E. To automate machine learning model training
+Correct Answer: B. To provide a SQL analytics service for querying data, building reports, dashboards, and connecting BI tools
+________________________________________
+Question 2
+What is the role of a SQL Warehouse in Databricks?
+A. It stores Delta Lake tables permanently.
+B. It manages Unity Catalog permissions.
+C. It serves as the compute engine that executes SQL queries.
+D. It automatically creates dashboards from SQL queries.
+E. It replaces the Databricks Control Plane.
+Correct Answer: C. It serves as the compute engine that executes SQL queries.
+________________________________________
+Question 3
+Which type of SQL Warehouse is recommended for most workloads?
+A. Classic
+B. Pro
+C. Serverless
+D. Dedicated
+E. Community
+Correct Answer: C. Serverless
+________________________________________
+Question 4
+Which optimization technology is used by Serverless SQL Warehouses to accelerate SQL query execution?
+A. Delta Cache
+B. Photon Engine
+C. Auto Loader
+D. MLflow Engine
+E. RocksDB
+Correct Answer: B. Photon Engine
+________________________________________
+Question 5
+What is the primary benefit of Predictive I/O in Serverless SQL Warehouses?
+A. Automatic SQL code generation
+B. Faster data scanning and reduced query latency
+C. Automatic dashboard creation
+D. Encryption of Delta tables
+E. Automatic schema evolution
+Correct Answer: B. Faster data scanning and reduced query latency
+________________________________________
+Question 6
+How do SQL Warehouses improve support for many simultaneous users?
+A. By limiting queries to a single cluster
+B. By disabling autoscaling during peak workloads
+C. By using multiple clusters and Intelligent Workload Management to distribute concurrent queries
+D. By caching every table permanently in memory
+E. By preventing users from running long-running queries
+Correct Answer: C. By using multiple clusters and Intelligent Workload Management to distribute concurrent queries
+________________________________________
+Question 7
+Which information is typically required for a BI tool such as Power BI or Tableau to connect to a SQL Warehouse?
+A. Notebook path and cluster ID
+B. Delta table location only
+C. Hostname, HTTP Path, and JDBC URL
+D. Workspace ID and Spark version only
+E. Unity Catalog metastore ID only
+Correct Answer: C. Hostname, HTTP Path, and JDBC URL
+________________________________________
+Question 8
+What information can users analyze in the Query Profile after executing a SQL query?
+A. Only the SQL query text
+B. Query execution plan, execution time, memory usage, rows processed, and data scanned
+C. Only cluster startup time
+D. Only Delta transaction history
+E. Only user permissions for the query
+Correct Answer: B. Query execution plan, execution time, memory usage, rows processed, and data scanned
+________________________________________
+Question 9
+What capability does the SQL Editor provide for saved queries?
+A. Converting SQL into Python automatically
+B. Scheduling queries to run automatically for recurring reports and dashboards
+C. Executing only DDL statements
+D. Managing Spark cluster configurations
+E. Automatically creating Unity Catalog schemas
+Correct Answer: B. Scheduling queries to run automatically for recurring reports and dashboards
+________________________________________
+Question 10
+Which statement correctly compares SQL Warehouses with All-Purpose Clusters?
+A. SQL Warehouses are optimized for analytics (OLAP), BI connectivity, and concurrent SQL workloads, while All-Purpose Clusters are designed primarily for engineering and development.
+B. All-Purpose Clusters provide better BI integration than SQL Warehouses.
+C. SQL Warehouses cannot execute SQL queries from notebooks.
+D. All-Purpose Clusters always use the Photon Engine by default.
+E. SQL Warehouses are intended only for machine learning workloads.
+Correct Answer: A. SQL Warehouses are optimized for analytics (OLAP), BI connectivity, and concurrent SQL workloads, while All-Purpose Clusters are designed primarily for engineering and development.
+

@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">49 Databricks CLI</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/49_Databricks_CLI",
+		"link_explanation_folder_name": "EXPLANATION_49_*",
+		"link_explanation_file_name": "EXPLANATION_49_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/49_Databricks_CLI",
+		"link_answer_folder_name": "ANSWER_49_*",
+		"link_answer_file_name": "ANSWER_49_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of the Databricks CLI (Command Line Interface)?"
+        }
+      ],
+      "options": {
+        "A": "To replace Unity Catalog for data governance",
+        "B": "To manage Databricks accounts and workspaces using terminal commands",
+        "C": "To automatically create SQL Warehouses",
+        "D": "To generate AI-powered dashboards",
+        "E": "To convert notebooks into Delta tables"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "The Databricks CLI is built on top of which underlying technology?"
+        }
+      ],
+      "options": {
+        "A": "Apache Spark SQL Engine",
+        "B": "Databricks REST API",
+        "C": "Delta Live Tables (DLT)",
+        "D": "Unity Catalog Metadata Service",
+        "E": "Azure Resource Manager (ARM) Templates"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following is a key benefit of using the Databricks CLI?"
+        }
+      ],
+      "options": {
+        "A": "It eliminates the need for SQL Warehouses.",
+        "B": "It enables automation, scripting, and CI/CD workflows.",
+        "C": "It automatically converts all notebooks into Python scripts.",
+        "D": "It replaces Git repositories for source control.",
+        "E": "It manages Azure subscriptions directly."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which command verifies that the Databricks CLI has been installed successfully?"
+        }
+      ],
+      "options": {
+        "A": "databricks --status",
+        "B": "databricks version",
+        "C": "databricks -v",
+        "D": "databricks verify",
+        "E": "databricks check"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which authentication method is best suited for local development and interactive use?"
+        }
+      ],
+      "options": {
+        "A": "Machine-to-Machine (M2M) using a Service Principal",
+        "B": "User-to-Machine (U2M) using a user account",
+        "C": "API Key authentication only",
+        "D": "SSH key authentication",
+        "E": "Anonymous authentication"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which authentication method is recommended for CI/CD pipelines and automated deployments?"
+        }
+      ],
+      "options": {
+        "A": "User-to-Machine (U2M)",
+        "B": "Browser-based authentication only",
+        "C": "Machine-to-Machine (M2M) using a Service Principal",
+        "D": "Password-only authentication",
+        "E": "Interactive Microsoft Entra ID login"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Where are Databricks CLI authentication profiles stored?"
+        }
+      ],
+      "options": {
+        "A": ".gitignore",
+        "B": "databricks.yaml",
+        "C": ".databricks.cfg",
+        "D": "settings.json",
+        "E": "bundle.toml"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which command lists all Unity Catalog catalogs available to the authenticated user?"
+        }
+      ],
+      "options": {
+        "A": "databricks schemas list",
+        "B": "databricks account catalogs list",
+        "C": "databricks catalogs list",
+        "D": "databricks workspace catalogs",
+        "E": "databricks unity list"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which command displays help information for Databricks CLI commands and subcommands?"
+        }
+      ],
+      "options": {
+        "A": "databricks info",
+        "B": "databricks docs",
+        "C": "databricks --help",
+        "D": "databricks guide",
+        "E": "databricks tutorial"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary role of the Databricks CLI in relation to Databricks Asset Bundles (DABs)?"
+        }
+      ],
+      "options": {
+        "A": "It converts notebooks into SQL queries automatically.",
+        "B": "It serves as the primary interface for deploying notebooks, jobs, pipelines, and other Databricks assets across environments.",
+        "C": "It replaces Azure DevOps Pipelines for CI/CD.",
+        "D": "It creates SQL Warehouses automatically during deployment.",
+        "E": "It manages Unity Catalog permissions for all users."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">47 AIBI Genie Space in Databricks</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/47_AIBI_Genie_Space_in_Databricks",
+		"link_explanation_folder_name": "EXPLANATION_47_*",
+		"link_explanation_file_name": "EXPLANATION_47_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/47_AIBI_Genie_Space_in_Databricks",
+		"link_answer_folder_name": "ANSWER_47_*",
+		"link_answer_file_name": "ANSWER_47_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of AI/BI Genie Spaces in Databricks?"
+        }
+      ],
+      "options": {
+        "A": "To automatically create Delta Live Tables pipelines",
+        "B": "To allow business users to query data using natural language instead of writing SQL",
+        "C": "To replace SQL Warehouses with Spark clusters",
+        "D": "To automatically optimize Unity Catalog permissions",
+        "E": "To schedule notebook execution using Workflows"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "When a user asks a question in plain English, what sequence of actions does Genie perform?"
+        }
+      ],
+      "options": {
+        "A": "Creates a Delta table, refreshes a Materialized View, and publishes a dashboard",
+        "B": "Generates SQL, executes it on a SQL Warehouse, and returns results with tables and visualizations",
+        "C": "Converts the question into Python code and runs it on a cluster",
+        "D": "Exports the data to Excel before displaying results",
+        "E": "Creates a new Unity Catalog schema automatically"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which SQL Warehouse types are supported by AI/BI Genie?"
+        }
+      ],
+      "options": {
+        "A": "Classic SQL Warehouse only",
+        "B": "SQL Warehouse Pro and SQL Warehouse Serverless",
+        "C": "All-purpose compute only",
+        "D": "Job clusters only",
+        "E": "Photon clusters only"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which type of information does Genie primarily use to understand the meaning of user questions?"
+        }
+      ],
+      "options": {
+        "A": "Delta transaction logs only",
+        "B": "Notebook source code",
+        "C": "Metadata such as table descriptions, column comments, dataset names, and relationships",
+        "D": "Spark executor logs",
+        "E": "Git repository history"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the purpose of configuring Example Values in a Genie Space?"
+        }
+      ],
+      "options": {
+        "A": "To increase SQL Warehouse performance",
+        "B": "To improve AI interpretation of user questions by providing representative data values",
+        "C": "To automatically create dashboard filters",
+        "D": "To replace dataset descriptions",
+        "E": "To generate Materialized Views automatically"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why would you add custom instructions to a Genie Space?"
+        }
+      ],
+      "options": {
+        "A": "To change Unity Catalog permissions automatically",
+        "B": "To teach Genie organization-specific terminology, abbreviations, and business language",
+        "C": "To create SQL Warehouses automatically",
+        "D": "To replace the need for metadata descriptions",
+        "E": "To schedule dashboard refreshes"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What does the Show Code option allow users to do?"
+        }
+      ],
+      "options": {
+        "A": "Modify the SQL Warehouse configuration",
+        "B": "Create new datasets for Genie",
+        "C": "Inspect the generated SQL, including filters, joins, and aggregations",
+        "D": "Change Unity Catalog metadata directly",
+        "E": "Edit dashboard permissions"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which capability does Genie provide in addition to returning query results?"
+        }
+      ],
+      "options": {
+        "A": "Automatic cluster provisioning only",
+        "B": "Automatic visualizations such as bar charts, pie charts, and trend charts",
+        "C": "Automatic creation of Delta Live Tables pipelines",
+        "D": "Automatic generation of Python notebooks",
+        "E": "Automatic creation of SQL Alerts"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What information is available in the Monitoring tab of a Genie Space?"
+        }
+      ],
+      "options": {
+        "A": "Only SQL Warehouse costs",
+        "B": "Only Unity Catalog permissions",
+        "C": "Questions asked, generated SQL, users, and query history",
+        "D": "Only dashboard refresh schedules",
+        "E": "Only cluster utilization metrics"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which permissions are required for business users to successfully use a shared Genie Space?"
+        }
+      ],
+      "options": {
+        "A": "Only Can Run permission on the Genie Space",
+        "B": "Only Workspace Administrator privileges",
+        "C": "Genie Space access, dataset permissions (USE CATALOG, USE SCHEMA, SELECT), and Can Use permission on the SQL Warehouse",
+        "D": "Cluster creation permission and notebook editing access",
+        "E": "Metastore Administrator privileges only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

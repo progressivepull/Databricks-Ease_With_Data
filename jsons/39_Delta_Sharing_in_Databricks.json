@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">39 Delta Sharing in Databricks</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/39_Delta_Sharing_in_Databricks",
+		"link_explanation_folder_name": "EXPLANATION_39_*",
+		"link_explanation_file_name": "EXPLANATION_39_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/39_Delta_Sharing_in_Databricks",
+		"link_answer_folder_name": "ANSWER_39_*",
+		"link_answer_file_name": "ANSWER_39_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Delta Sharing in Databricks?"
+        }
+      ],
+      "options": {
+        "A": "To copy Delta tables between workspaces for backup",
+        "B": "To securely share live, read-only data across organizations, clouds, and platforms without duplicating the data",
+        "C": "To automatically synchronize Spark clusters across regions",
+        "D": "To migrate Unity Catalog metadata between metastores",
+        "E": "To replace Delta Lake with Parquet files"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which operation can a Delta Sharing recipient perform on shared data?"
+        }
+      ],
+      "options": {
+        "A": "Insert new rows into shared tables",
+        "B": "Update existing records in shared tables",
+        "C": "Delete shared data from the provider's environment",
+        "D": "Query and read shared objects without modifying them",
+        "E": "Rename shared tables in the provider's catalog"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Delta Sharing mode should be used when the recipient does not use Databricks?"
+        }
+      ],
+      "options": {
+        "A": "Workspace Sharing",
+        "B": "Internal Sharing",
+        "C": "Open Sharing",
+        "D": "Cross-Metastore Sharing",
+        "E": "Live Replication"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following is not one of the four primary Delta Sharing components?"
+        }
+      ],
+      "options": {
+        "A": "Provider",
+        "B": "Share",
+        "C": "Recipient",
+        "D": "Catalog",
+        "E": "Checkpoint"
+      },
+      "answer": "E",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "In Delta Sharing, what is the role of the Provider?"
+        }
+      ],
+      "options": {
+        "A": "The organization that receives shared data",
+        "B": "The service that authenticates Spark clusters",
+        "C": "The organization that owns the data, creates shares, and grants recipients access",
+        "D": "The catalog created by the recipient",
+        "E": "The application that consumes Open Sharing tokens"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What information is required to create a Databricks-to-Databricks recipient?"
+        }
+      ],
+      "options": {
+        "A": "Cluster ID and notebook path",
+        "B": "Workspace URL and SQL Warehouse ID",
+        "C": "Recipient name, sharing method, and the recipient workspace's Sharing Identifier",
+        "D": "Delta table location and storage account key",
+        "E": "Unity Catalog metastore ID only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which permissions are typically required before a provider can include objects in a Delta Share?"
+        }
+      ],
+      "options": {
+        "A": "MODIFY, DELETE, and DROP",
+        "B": "CREATE TABLE, CREATE VIEW, and CREATE FUNCTION",
+        "C": "SELECT for tables, READ VOLUME for volumes, and EXECUTE for functions",
+        "D": "MANAGE and OWNERSHIP only",
+        "E": "CREATE SHARE only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How does a Databricks recipient access shared data after it has been shared?"
+        }
+      ],
+      "options": {
+        "A": "By copying all shared tables into a local metastore",
+        "B": "By creating a Delta Sharing Catalog that references the provider's shared objects",
+        "C": "By exporting the data to CSV files first",
+        "D": "By manually recreating the provider's schemas",
+        "E": "By downloading a backup of the shared database"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What authentication mechanism is typically used for Open Sharing?"
+        }
+      ],
+      "options": {
+        "A": "Workspace Sharing Identifier",
+        "B": "Kerberos tickets",
+        "C": "OAuth user credentials only",
+        "D": "Sharing tokens",
+        "E": "SSH keys"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Unity Catalog feature centrally manages Delta Sharing governance?"
+        }
+      ],
+      "options": {
+        "A": "Spark SQL Engine",
+        "B": "Delta Lake Transaction Log",
+        "C": "Unity Catalog manages Providers, Recipients, Shares, permissions, and security",
+        "D": "Databricks Connect",
+        "E": "MLflow Tracking Server"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of a Metric View in Databricks Unity Catalog?
+A. To automatically ingest streaming data into Delta tables
+B. To provide a centralized, reusable, governed semantic layer for business metrics and dimensions
+C. To replace SQL Warehouses for analytics
+D. To create Delta Live Tables pipelines automatically
+E. To manage cluster configurations and autoscaling
+Correct Answer: B. To provide a centralized, reusable, governed semantic layer for business metrics and dimensions
+________________________________________
+Question 2
+Which two types of objects are defined within a Metric View?
+A. Catalogs and Schemas
+B. Pipelines and Jobs
+C. Dimensions and Measures
+D. Clusters and Warehouses
+E. Volumes and Connections
+Correct Answer: C. Dimensions and Measures
+________________________________________
+Question 3
+How are Metric Views created in Databricks?
+A. Using Python notebooks only
+B. Using SQL stored procedures
+C. Using YAML definitions
+D. Using JSON configuration files
+E. Using Scala classes
+Correct Answer: C. Using YAML definitions
+________________________________________
+Question 4
+What is the primary benefit of defining business logic once in a Metric View?
+A. It automatically creates dashboards for every user.
+B. It ensures everyone uses the same KPI calculations and reduces duplicated SQL.
+C. It eliminates the need for Unity Catalog.
+D. It converts all data into Delta format.
+E. It replaces SQL with Python for analytics.
+Correct Answer: B. It ensures everyone uses the same KPI calculations and reduces duplicated SQL.
+________________________________________
+Question 5
+How are reusable measures referenced when querying a Metric View?
+A. metric(total_orders)
+B. calc(total_orders)
+C. measure(total_orders)
+D. aggregate(total_orders)
+E. value(total_orders)
+Correct Answer: C. measure(total_orders)
+________________________________________
+Question 6
+Which SQL statement is not supported when querying a Metric View?
+A. SELECT measure(total_orders) FROM orders_metric_view
+B. SELECT order_status_readable, measure(total_orders) GROUP BY order_status_readable
+C. SELECT * FROM orders_metric_view
+D. SELECT measure(total_price) FROM orders_metric_view
+E. SELECT order_year, measure(total_orders) GROUP BY order_year
+Correct Answer: C. SELECT * FROM orders_metric_view
+________________________________________
+Question 7
+What advanced capability allows Metric Views to calculate values such as Current Year Orders and Previous Year Orders?
+A. Delta Sharing
+B. Window-based measures
+C. Streaming Tables
+D. Foreign Catalogs
+E. SQL Alerts
+Correct Answer: B. Window-based measures
+________________________________________
+Question 8
+Why are joins included in Metric Views?
+A. To replace SQL Warehouses with Delta Live Tables
+B. To automatically create Materialized Views
+C. To expose additional business dimensions, such as customer information, without requiring users to write joins themselves
+D. To convert relational databases into Delta tables
+E. To enable notebook scheduling
+Correct Answer: C. To expose additional business dimensions, such as customer information, without requiring users to write joins themselves
+________________________________________
+Question 9
+What advantage do AI/BI Dashboards gain by using Metric Views?
+A. Dashboard developers no longer need to define complex SQL calculations for every report because reusable business logic already exists.
+B. Dashboards can only display KPI cards.
+C. SQL Warehouses are no longer required.
+D. All dashboards become Streaming Tables automatically.
+E. Forecasting requires manual SQL coding for every visualization.
+Correct Answer: A. Dashboard developers no longer need to define complex SQL calculations for every report because reusable business logic already exists.
+________________________________________
+Question 10
+What permissions are typically granted to users with Consumer Access?
+A. Full workspace development and cluster creation privileges
+B. SQL development and notebook editing permissions
+C. Dashboard and Genie access without development or cluster management privileges
+D. Metastore Administrator permissions
+E. Unity Catalog ownership of all Metric Views
+Correct Answer: C. Dashboard and Genie access without development or cluster management privileges
+

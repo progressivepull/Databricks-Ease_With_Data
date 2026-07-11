@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">34 Object Level Security or Permissions in Unity Catalog</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/34_Object_Level_Security_or_Permissions_in_Unity_Catalog",
+		"link_explanation_folder_name": "EXPLANATION_34_*",
+		"link_explanation_file_name": "EXPLANATION_34_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/34_Object_Level_Security_or_Permissions_in_Unity_Catalog",
+		"link_answer_folder_name": "ANSWER_34_*",
+		"link_answer_file_name": "ANSWER_34_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Object-Level Security in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "To automatically optimize Delta tables for performance",
+        "B": "To encrypt all data stored in Unity Catalog",
+        "C": "To control who can view, access, modify, and manage individual Unity Catalog objects",
+        "D": "To create catalogs and schemas automatically",
+        "E": "To manage Spark cluster configurations"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following correctly represents the Unity Catalog object hierarchy?"
+        }
+      ],
+      "options": {
+        "A": "Schema → Catalog → Metastore → Table",
+        "B": "Metastore → Catalog → Schema → Tables, Views, Volumes, Functions, and Models",
+        "C": "Catalog → Metastore → Schema → Views",
+        "D": "Table → Schema → Catalog → Metastore",
+        "E": "Volume → Table → Schema → Catalog"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when a privilege is granted on a parent object, such as a Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Permissions apply only to the Catalog itself.",
+        "B": "Child objects automatically inherit the permission.",
+        "C": "All existing permissions on child objects are removed.",
+        "D": "Only Metastore Administrators receive the permission.",
+        "E": "The permission applies only after a manual refresh."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "When is the top-down permission model most appropriate?"
+        }
+      ],
+      "options": {
+        "A": "When granting access to only one specific table",
+        "B": "When users need broad access to an entire Catalog or Schema through inherited permissions",
+        "C": "When hiding catalogs from all users",
+        "D": "When granting MANAGE privileges only",
+        "E": "When assigning permissions to Spark clusters"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which combination of privileges is required for a user to successfully query a Unity Catalog table?"
+        }
+      ],
+      "options": {
+        "A": "SELECT only",
+        "B": "USE CATALOG and SELECT only",
+        "C": "USE SCHEMA and SELECT only",
+        "D": "USE CATALOG, USE SCHEMA, and SELECT",
+        "E": "BROWSE and SELECT only"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What does the BROWSE privilege allow a user to do?"
+        }
+      ],
+      "options": {
+        "A": "Read data from tables and views",
+        "B": "Modify table data",
+        "C": "Discover catalogs, view metadata, and see lineage without accessing the data itself",
+        "D": "Create new schemas and tables",
+        "E": "Drop Unity Catalog objects"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which privilege allows a user to read files stored in a Unity Catalog Volume?"
+        }
+      ],
+      "options": {
+        "A": "SELECT",
+        "B": "MODIFY",
+        "C": "READ VOLUME",
+        "D": "WRITE VOLUME",
+        "E": "EXECUTE"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement about ALL PRIVILEGES is correct?"
+        }
+      ],
+      "options": {
+        "A": "It includes the ability to change object ownership.",
+        "B": "It includes the MANAGE privilege automatically.",
+        "C": "It grants nearly every operational permission but does not include managing permissions or ownership.",
+        "D": "It is equivalent to Metastore Administrator privileges.",
+        "E": "It allows only read operations."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What additional capabilities does the MANAGE privilege provide?"
+        }
+      ],
+      "options": {
+        "A": "Querying tables only",
+        "B": "Reading files from Volumes only",
+        "C": "Renaming objects, dropping objects, and changing permissions",
+        "D": "Creating Spark clusters automatically",
+        "E": "Running notebooks as another user"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which approach is recommended for repeatable, automated permission management in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "Editing notebook source code",
+        "B": "Using only the Catalog Explorer UI",
+        "C": "Using SQL GRANT and REVOKE statements",
+        "D": "Restarting the Metastore after each permission change",
+        "E": "Assigning permissions directly to individual users instead of groups"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

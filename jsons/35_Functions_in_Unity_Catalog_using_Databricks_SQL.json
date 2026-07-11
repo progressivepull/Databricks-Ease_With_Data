@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">35 Functions in Unity Catalog using Databricks SQL</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/35_Functions_in_Unity_Catalog_using_Databricks_SQL",
+		"link_explanation_folder_name": "EXPLANATION_35_*",
+		"link_explanation_file_name": "EXPLANATION_35_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/35_Functions_in_Unity_Catalog_using_Databricks_SQL",
+		"link_answer_folder_name": "ANSWER_35_*",
+		"link_answer_file_name": "ANSWER_35_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is true about functions registered in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "They exist only for the current Spark session.",
+        "B": "They cannot be shared between users.",
+        "C": "They are securable objects that can be shared, managed, and granted permissions.",
+        "D": "They can only be used in SQL notebooks.",
+        "E": "They are stored inside Delta tables."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which of the following is an example of a built-in Databricks SQL function?"
+        }
+      ],
+      "options": {
+        "A": "tax_sql()",
+        "B": "get_emp()",
+        "C": "LOWER()",
+        "D": "nutrition_api()",
+        "E": "employee_lookup()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary advantage of a Unity Catalog User-Defined Function (UDF) over a PySpark session UDF?"
+        }
+      ],
+      "options": {
+        "A": "It executes only in Python.",
+        "B": "It is available only within the current notebook session.",
+        "C": "It is permanently registered, shared across users, and governed by Unity Catalog permissions.",
+        "D": "It requires no registration.",
+        "E": "It can return only Boolean values."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What distinguishes a scalar function from a table function?"
+        }
+      ],
+      "options": {
+        "A": "Scalar functions are written only in SQL, while table functions are written only in Python.",
+        "B": "Scalar functions return one value, while table functions return multiple rows.",
+        "C": "Scalar functions require parameters, while table functions do not.",
+        "D": "Scalar functions can only be used in PySpark.",
+        "E": "Table functions cannot access tables."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the benefit of using CREATE OR REPLACE FUNCTION?"
+        }
+      ],
+      "options": {
+        "A": "It automatically grants permissions to all users.",
+        "B": "It allows a function to be updated without manually dropping it first.",
+        "C": "It converts a scalar function into a table function.",
+        "D": "It automatically creates a new catalog and schema.",
+        "E": "It changes a SQL function into a Python function."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How should a Unity Catalog SQL function be called from a PySpark DataFrame?"
+        }
+      ],
+      "options": {
+        "A": "By using spark.sqlFunction() directly",
+        "B": "By wrapping the function call with expr()",
+        "C": "By importing the function into Python using import",
+        "D": "By using spark.read.table()",
+        "E": "By converting it into a session UDF first"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which keyword is used when defining a Python User-Defined Function in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "LANGUAGE SCALA",
+        "B": "LANGUAGE JAVA",
+        "C": "LANGUAGE PYTHON",
+        "D": "PYTHON FUNCTION",
+        "E": "CREATE PYTHON FUNCTION"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How is a table function called in Databricks SQL?"
+        }
+      ],
+      "options": {
+        "A": "SELECT function_name()",
+        "B": "CALL function_name()",
+        "C": "SELECT * FROM function_name(...)",
+        "D": "RUN function_name()",
+        "E": "EXECUTE function_name()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which information can be viewed for a registered function in Catalog Explorer?"
+        }
+      ],
+      "options": {
+        "A": "Only the function name and owner",
+        "B": "Only execution history",
+        "C": "Input parameters, return type, function type, language, and definition",
+        "D": "Only the underlying Delta table location",
+        "E": "Only the Python source code"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement correctly describes function parameters and function types?"
+        }
+      ],
+      "options": {
+        "A": "Functions with multiple parameters are always table functions.",
+        "B": "Functions with no parameters must be scalar functions.",
+        "C": "The number of parameters determines whether a function is scalar or table.",
+        "D": "The output determines the function type: one value is a scalar function, while multiple rows form a table function.",
+        "E": "Table functions cannot accept parameters."
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

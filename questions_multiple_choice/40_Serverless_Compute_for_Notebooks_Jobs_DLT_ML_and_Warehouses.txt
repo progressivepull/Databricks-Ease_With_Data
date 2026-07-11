@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of Databricks Serverless Compute?
+A. To require users to manually configure Spark clusters before running code
+B. To automatically manage compute infrastructure, including cluster creation, scaling, and termination
+C. To replace Unity Catalog with a new governance system
+D. To permanently store Delta Lake tables
+E. To eliminate the need for Databricks SQL Warehouses
+Correct Answer: B. To automatically manage compute infrastructure, including cluster creation, scaling, and termination
+________________________________________
+Question 2
+Which task is still the responsibility of a user when using Serverless Compute?
+A. Selecting virtual machine sizes
+B. Configuring autoscaling policies
+C. Applying Serverless to the workload and running the code
+D. Maintaining Spark clusters
+E. Patching operating systems on worker nodes
+Correct Answer: C. Applying Serverless to the workload and running the code
+________________________________________
+Question 3
+How does the Serverless Compute architecture differ from Classic Compute?
+A. Serverless runs entirely inside the customer's data plane using customer-managed clusters.
+B. Serverless uses a Databricks-managed compute plane that securely accesses customer data.
+C. Serverless requires a dedicated cluster for every notebook session.
+D. Classic Compute and Serverless use the exact same infrastructure architecture.
+E. Serverless removes the Databricks Control Plane entirely.
+Correct Answer: B. Serverless uses a Databricks-managed compute plane that securely accesses customer data.
+________________________________________
+Question 4
+Why do Serverless notebooks and jobs typically start within seconds?
+A. Users preconfigure all clusters before execution.
+B. Databricks maintains a fleet of pre-provisioned virtual machines ready to run workloads.
+C. Serverless disables Spark initialization.
+D. The data is cached permanently in memory.
+E. All jobs execute on a single shared cluster.
+Correct Answer: B. Databricks maintains a fleet of pre-provisioned virtual machines ready to run workloads.
+________________________________________
+Question 5
+What happens when a Serverless Compute workload requires additional resources?
+A. Users must manually resize the cluster.
+B. The workload stops until an administrator adds more virtual machines.
+C. Serverless automatically scales resources up or down as needed.
+D. The workload is moved to a Classic Compute cluster.
+E. Spark executors are permanently fixed after startup.
+Correct Answer: C. Serverless automatically scales resources up or down as needed.
+________________________________________
+Question 6
+Which notebook languages are supported by Serverless notebooks according to the lesson?
+A. Python and Scala
+B. SQL and Scala
+C. Python and SQL
+D. Python, SQL, Scala, and R
+E. SQL only
+Correct Answer: C. Python and SQL
+________________________________________
+Question 7
+What is the primary purpose of a Budget Policy in Serverless Compute?
+A. To encrypt notebook code automatically
+B. To schedule notebook execution
+C. To tag, monitor, and allocate Serverless DBU costs for reporting and chargeback
+D. To determine Spark executor memory settings
+E. To create Unity Catalog schemas automatically
+Correct Answer: C. To tag, monitor, and allocate Serverless DBU costs for reporting and chargeback
+________________________________________
+Question 8
+Which Databricks workloads can use Serverless Compute?
+A. Only notebooks
+B. Only SQL Warehouses
+C. Notebooks, Workflows (Jobs), Delta Live Tables (DLT), Machine Learning workloads, and SQL Warehouses
+D. Only Delta Live Tables (DLT)
+E. Only Machine Learning workloads
+Correct Answer: C. Notebooks, Workflows (Jobs), Delta Live Tables (DLT), Machine Learning workloads, and SQL Warehouses
+________________________________________
+Question 9
+How is Serverless Compute billed?
+A. Separate cloud virtual machine charges plus Databricks DBUs
+B. Fixed monthly subscription regardless of usage
+C. Databricks DBUs only, with infrastructure and virtual machine costs included
+D. Virtual machine charges only
+E. One-time licensing fee per workspace
+Correct Answer: C. Databricks DBUs only, with infrastructure and virtual machine costs included
+________________________________________
+Question 10
+What happens when a Serverless Compute session becomes idle?
+A. The compute continues running indefinitely.
+B. The workload is automatically migrated to Classic Compute.
+C. Serverless automatically terminates the idle compute session to help reduce costs.
+D. The notebook is deleted automatically.
+E. The Spark cluster is converted into a Job Cluster.
+Correct Answer: C. Serverless automatically terminates the idle compute session to help reduce costs.
+

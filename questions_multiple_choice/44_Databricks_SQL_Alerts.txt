@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of Databricks SQL Alerts?
+A. To automatically optimize SQL queries for better performance
+B. To continuously monitor SQL query results and send notifications when specified conditions are met
+C. To automatically create Materialized Views from SQL queries
+D. To replicate SQL query results into Delta Lake
+E. To schedule notebook execution in Databricks Workflows
+Correct Answer: B. To continuously monitor SQL query results and send notifications when specified conditions are met
+________________________________________
+Question 2
+Which of the following is a common use case for Databricks SQL Alerts?
+A. Creating Unity Catalog metastores
+B. Monitoring pending order counts, data quality issues, and business KPIs
+C. Converting CSV files into Delta tables
+D. Managing Spark cluster autoscaling
+E. Deploying machine learning models
+Correct Answer: B. Monitoring pending order counts, data quality issues, and business KPIs
+________________________________________
+Question 3
+Every Databricks SQL Alert is based on which of the following?
+A. A Delta Live Tables pipeline
+B. A Streaming Table
+C. A saved SQL query
+D. A Python notebook
+E. A Unity Catalog Volume
+Correct Answer: C. A saved SQL query
+________________________________________
+Question 4
+Which component executes the SQL query used by a Databricks SQL Alert?
+A. Unity Catalog
+B. SQL Warehouse attached to the saved query
+C. Delta Live Tables pipeline
+D. Databricks Repos
+E. MLflow Tracking Server
+Correct Answer: B. SQL Warehouse attached to the saved query
+________________________________________
+Question 5
+Which comparison operator is supported when configuring a SQL Alert trigger condition?
+A. Greater than (>)
+B. GROUP BY
+C. JOIN
+D. UNION
+E. ORDER BY
+Correct Answer: A. Greater than (>)
+________________________________________
+Question 6
+If a SQL Alert is configured with the condition Pending Orders > 10,000 and the query returns 191,189, what will happen?
+A. The alert status becomes Unknown.
+B. The alert is automatically deleted.
+C. The alert status becomes Triggered because the condition evaluates to TRUE.
+D. The query execution is canceled.
+E. The SQL Warehouse is stopped automatically.
+Correct Answer: C. The alert status becomes Triggered because the condition evaluates to TRUE.
+________________________________________
+Question 7
+What notification behavior helps prevent repeated alerts while the monitored condition remains true?
+A. Notify every evaluation
+B. Trigger once until the condition returns to normal
+C. Run the SQL query continuously without evaluation
+D. Disable notifications after the first query execution
+E. Execute a full refresh before every evaluation
+Correct Answer: B. Trigger once until the condition returns to normal
+________________________________________
+Question 8
+Which of the following is NOT a supported notification destination for Databricks SQL Alerts?
+A. Slack
+B. Microsoft Teams
+C. PagerDuty
+D. Email
+E. GitHub Issues
+Correct Answer: E. GitHub Issues
+________________________________________
+Question 9
+Who can create notification destinations such as Email, Slack, or Microsoft Teams in Databricks?
+A. Any workspace user
+B. Catalog Owners only
+C. Workspace Administrators
+D. SQL Analysts only
+E. Metastore Administrators only
+Correct Answer: C. Workspace Administrators
+________________________________________
+Question 10
+What is the difference between a Query Schedule and an Alert Schedule?
+A. They are the same schedule managed together.
+B. The Query Schedule refreshes dashboards, while the Alert Schedule refreshes Materialized Views.
+C. The Query Schedule executes the saved query, while the Alert Schedule determines when the alert condition is evaluated.
+D. The Query Schedule only works with notebooks, while the Alert Schedule only works with SQL Warehouses.
+E. The Query Schedule creates notifications, while the Alert Schedule creates SQL queries.
+Correct Answer: C. The Query Schedule executes the saved query, while the Alert Schedule determines when the alert condition is evaluated.
+

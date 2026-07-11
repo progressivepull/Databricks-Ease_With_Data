@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of Row-Level Security (RLS) in Unity Catalog?
+A. To prevent users from accessing an entire Databricks workspace
+B. To encrypt sensitive columns in a table
+C. To restrict which rows each user can view within the same table
+D. To automatically create separate tables for each user
+E. To hide SQL query text from users
+Correct Answer: C. To restrict which rows each user can view within the same table
+________________________________________
+Question 2
+Why are Row-Level Filters preferred over maintaining multiple copies of the same table?
+A. They permanently delete unauthorized rows.
+B. They dynamically restrict access based on security rules while allowing all users to query a single physical table.
+C. They require every query to include a custom WHERE clause.
+D. They eliminate the need for Unity Catalog.
+E. They convert tables into views automatically.
+Correct Answer: B. They dynamically restrict access based on security rules while allowing all users to query a single physical table.
+________________________________________
+Question 3
+Which built-in Databricks SQL function returns the identity of the user executing the query?
+A. CURRENT_ROLE()
+B. CURRENT_EMAIL()
+C. CURRENT_USER()
+D. SESSION_USER()
+E. ACTIVE_USER()
+Correct Answer: C. CURRENT_USER()
+________________________________________
+Question 4
+What is the purpose of the metadata table used in the lesson?
+A. To store Spark cluster configurations
+B. To store Delta transaction logs
+C. To centrally maintain user authorization rules, such as which market segments each user may access
+D. To cache query results for faster execution
+E. To store notebook permissions only
+Correct Answer: C. To centrally maintain user authorization rules, such as which market segments each user may access
+________________________________________
+Question 5
+Why is the SQL EXISTS operator used in the row filter function?
+A. It returns the first matching row from a table.
+B. It automatically updates the metadata table.
+C. It returns a Boolean value indicating whether an authorization match exists.
+D. It counts the number of authorized users.
+E. It creates a temporary view for each user.
+Correct Answer: C. It returns a Boolean value indicating whether an authorization match exists.
+________________________________________
+Question 6
+What type of value must a Unity Catalog row filter function return?
+A. Integer
+B. String
+C. Table
+D. Boolean (TRUE or FALSE)
+E. JSON object
+Correct Answer: D. Boolean (TRUE or FALSE)
+________________________________________
+Question 7
+Why does the lesson first implement the security logic as a dynamic view before applying a row filter to the table?
+A. Dynamic views permanently replace the underlying table.
+B. Dynamic views execute faster than row filters.
+C. They allow the security logic to be validated before applying automatic enforcement at the table level.
+D. Row filters cannot use metadata tables directly.
+E. Unity Catalog requires every row filter to be created from a view.
+Correct Answer: C. They allow the security logic to be validated before applying automatic enforcement at the table level.
+________________________________________
+Question 8
+What happens after a row filter is attached directly to a Unity Catalog table?
+A. Users must manually include a WHERE clause in every query.
+B. Only administrators can query the table.
+C. Unity Catalog automatically applies the filter to every query against the table.
+D. The table becomes read-only.
+E. The table is converted into a dynamic view.
+Correct Answer: C. Unity Catalog automatically applies the filter to every query against the table.
+________________________________________
+Question 9
+How can an administrator grant a user access to an additional market segment without modifying the row filter function?
+A. Rewrite the SQL function.
+B. Recreate the table.
+C. Update the metadata table with the new authorization rule.
+D. Restart the Databricks cluster.
+E. Create a separate table for the user.
+Correct Answer: C. Update the metadata table with the new authorization rule.
+________________________________________
+Question 10
+Which statement correctly compares Dynamic Views and Row-Level Filters?
+A. Both automatically apply security to every table query without additional configuration.
+B. Dynamic Views require users to query the view, while Row-Level Filters automatically enforce security on all queries against the table.
+C. Row-Level Filters cannot use Boolean functions.
+D. Dynamic Views can only filter columns, not rows.
+E. Row-Level Filters require users to manually call a security function in every query.
+Correct Answer: B. Dynamic Views require users to query the view, while Row-Level Filters automatically enforce security on all queries against the table.
+

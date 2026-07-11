@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">40 Serverless Compute for Notebooks, Jobs, DLT, ML and Warehouses</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/40_Serverless_Compute_for_Notebooks_Jobs_DLT_ML_and_Warehouses",
+		"link_explanation_folder_name": "EXPLANATION_40_*",
+		"link_explanation_file_name": "EXPLANATION_40_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/40_Serverless_Compute_for_Notebooks_Jobs_DLT_ML_and_Warehouses",
+		"link_answer_folder_name": "ANSWER_40_*",
+		"link_answer_file_name": "ANSWER_40_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Databricks Serverless Compute?"
+        }
+      ],
+      "options": {
+        "A": "To require users to manually configure Spark clusters before running code",
+        "B": "To automatically manage compute infrastructure, including cluster creation, scaling, and termination",
+        "C": "To replace Unity Catalog with a new governance system",
+        "D": "To permanently store Delta Lake tables",
+        "E": "To eliminate the need for Databricks SQL Warehouses"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which task is still the responsibility of a user when using Serverless Compute?"
+        }
+      ],
+      "options": {
+        "A": "Selecting virtual machine sizes",
+        "B": "Configuring autoscaling policies",
+        "C": "Applying Serverless to the workload and running the code",
+        "D": "Maintaining Spark clusters",
+        "E": "Patching operating systems on worker nodes"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How does the Serverless Compute architecture differ from Classic Compute?"
+        }
+      ],
+      "options": {
+        "A": "Serverless runs entirely inside the customer's data plane using customer-managed clusters.",
+        "B": "Serverless uses a Databricks-managed compute plane that securely accesses customer data.",
+        "C": "Serverless requires a dedicated cluster for every notebook session.",
+        "D": "Classic Compute and Serverless use the exact same infrastructure architecture.",
+        "E": "Serverless removes the Databricks Control Plane entirely."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why do Serverless notebooks and jobs typically start within seconds?"
+        }
+      ],
+      "options": {
+        "A": "Users preconfigure all clusters before execution.",
+        "B": "Databricks maintains a fleet of pre-provisioned virtual machines ready to run workloads.",
+        "C": "Serverless disables Spark initialization.",
+        "D": "The data is cached permanently in memory.",
+        "E": "All jobs execute on a single shared cluster."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when a Serverless Compute workload requires additional resources?"
+        }
+      ],
+      "options": {
+        "A": "Users must manually resize the cluster.",
+        "B": "The workload stops until an administrator adds more virtual machines.",
+        "C": "Serverless automatically scales resources up or down as needed.",
+        "D": "The workload is moved to a Classic Compute cluster.",
+        "E": "Spark executors are permanently fixed after startup."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which notebook languages are supported by Serverless notebooks according to the lesson?"
+        }
+      ],
+      "options": {
+        "A": "Python and Scala",
+        "B": "SQL and Scala",
+        "C": "Python and SQL",
+        "D": "Python, SQL, Scala, and R",
+        "E": "SQL only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of a Budget Policy in Serverless Compute?"
+        }
+      ],
+      "options": {
+        "A": "To encrypt notebook code automatically",
+        "B": "To schedule notebook execution",
+        "C": "To tag, monitor, and allocate Serverless DBU costs for reporting and chargeback",
+        "D": "To determine Spark executor memory settings",
+        "E": "To create Unity Catalog schemas automatically"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Databricks workloads can use Serverless Compute?"
+        }
+      ],
+      "options": {
+        "A": "Only notebooks",
+        "B": "Only SQL Warehouses",
+        "C": "Notebooks, Workflows (Jobs), Delta Live Tables (DLT), Machine Learning workloads, and SQL Warehouses",
+        "D": "Only Delta Live Tables (DLT)",
+        "E": "Only Machine Learning workloads"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How is Serverless Compute billed?"
+        }
+      ],
+      "options": {
+        "A": "Separate cloud virtual machine charges plus Databricks DBUs",
+        "B": "Fixed monthly subscription regardless of usage",
+        "C": "Databricks DBUs only, with infrastructure and virtual machine costs included",
+        "D": "Virtual machine charges only",
+        "E": "One-time licensing fee per workspace"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when a Serverless Compute session becomes idle?"
+        }
+      ],
+      "options": {
+        "A": "The compute continues running indefinitely.",
+        "B": "The workload is automatically migrated to Classic Compute.",
+        "C": "Serverless automatically terminates the idle compute session to help reduce costs.",
+        "D": "The notebook is deleted automatically.",
+        "E": "The Spark cluster is converted into a Job Cluster."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

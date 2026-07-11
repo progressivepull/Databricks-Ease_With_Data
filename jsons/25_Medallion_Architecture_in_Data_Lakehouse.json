@@ -1,0 +1,292 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">25 Medallion Architecture in Data Lakehouse</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/25_Medallion_Architecture_in_Data_Lakehouse",
+		"link_explanation_folder_name": "EXPLANATION_25_*",
+		"link_explanation_file_name": "EXPLANATION_25_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/25_Medallion_Architecture_in_Data_Lakehouse",
+		"link_answer_folder_name": "ANSWER_25_*",
+		"link_answer_file_name": "ANSWER_25_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Databricks Auto Loader?"
+        }
+      ],
+      "options": {
+        "A": "To create Delta Lake tables from SQL scripts only",
+        "B": "To continuously optimize Delta tables for performance",
+        "C": "To incrementally ingest new files from cloud storage into Delta Lake tables",
+        "D": "To replace Structured Streaming with batch processing",
+        "E": "To convert Parquet files into CSV files automatically"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Structured Streaming source does Auto Loader use to read incoming files?"
+        }
+      ],
+      "options": {
+        "A": "deltaFiles",
+        "B": "cloudFiles",
+        "C": "autoStream",
+        "D": "fileLoader",
+        "E": "streamFiles"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which feature ensures that Auto Loader does not process the same file more than once?"
+        }
+      ],
+      "options": {
+        "A": "Time Travel",
+        "B": "Delta Cache",
+        "C": "Exactly-once processing with checkpoints and RocksDB",
+        "D": "Partition Pruning",
+        "E": "Z-Ordering"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Auto Loader option specifies where inferred schemas and schema evolution metadata are stored?"
+        }
+      ],
+      "options": {
+        "A": "cloudFiles.metadataLocation",
+        "B": "cloudFiles.schemaLocation",
+        "C": "checkpointLocation",
+        "D": "delta.schemaPath",
+        "E": "schemaTrackingPath"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the purpose of the following option?"
+        },
+        {
+          "line": ".option(\"pathGlobFilter\", \"*.csv\")"
+        }
+      ],
+      "options": {
+        "A": "Compress CSV files before loading them",
+        "B": "Convert all file types into CSV format",
+        "C": "Process only CSV files while ignoring other file types",
+        "D": "Load only files larger than 1 MB",
+        "E": "Rename CSV files during ingestion"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Auto Loader feature allows you to specify data types for only selected columns while automatically inferring the rest?"
+        }
+      ],
+      "options": {
+        "A": "Schema Merge",
+        "B": "Schema Validation",
+        "C": "Schema Hints",
+        "D": "Schema Registry",
+        "E": "Schema Override"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when Auto Loader uses the Available Now trigger?"
+        }
+      ],
+      "options": {
+        "A": "The stream runs forever until manually stopped.",
+        "B": "Only one file is processed each time the stream runs.",
+        "C": "All currently available files are processed, and then the stream stops automatically.",
+        "D": "Files are processed only when a user manually approves them.",
+        "E": "Processing occurs only when new notifications arrive."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which file detection method is the default for Auto Loader?"
+        }
+      ],
+      "options": {
+        "A": "Event Hub Notifications",
+        "B": "File Notification",
+        "C": "Kafka Streaming",
+        "D": "Directory Listing",
+        "E": "Delta Change Data Feed"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which schema evolution mode stores unexpected columns inside a special rescued data column while allowing the stream to continue running?"
+        }
+      ],
+      "options": {
+        "A": "Add New Columns",
+        "B": "None",
+        "C": "Rescue",
+        "D": "Fail on New Columns",
+        "E": "Strict Mode"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which hidden metadata column can be used to record the source filename for each ingested row?"
+        }
+      ],
+      "options": {
+        "A": "_metadata.file_path",
+        "B": "_metadata.source",
+        "C": "_metadata.file_name",
+        "D": "_metadata.filename_id",
+        "E": "_metadata.input_file"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

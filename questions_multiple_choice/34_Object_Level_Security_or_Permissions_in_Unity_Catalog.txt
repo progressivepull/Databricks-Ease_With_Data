@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of Object-Level Security in Unity Catalog?
+A. To automatically optimize Delta tables for performance
+B. To encrypt all data stored in Unity Catalog
+C. To control who can view, access, modify, and manage individual Unity Catalog objects
+D. To create catalogs and schemas automatically
+E. To manage Spark cluster configurations
+Correct Answer: C. To control who can view, access, modify, and manage individual Unity Catalog objects
+________________________________________
+Question 2
+Which of the following correctly represents the Unity Catalog object hierarchy?
+A. Schema → Catalog → Metastore → Table
+B. Metastore → Catalog → Schema → Tables, Views, Volumes, Functions, and Models
+C. Catalog → Metastore → Schema → Views
+D. Table → Schema → Catalog → Metastore
+E. Volume → Table → Schema → Catalog
+Correct Answer: B. Metastore → Catalog → Schema → Tables, Views, Volumes, Functions, and Models
+________________________________________
+Question 3
+What happens when a privilege is granted on a parent object, such as a Catalog?
+A. Permissions apply only to the Catalog itself.
+B. Child objects automatically inherit the permission.
+C. All existing permissions on child objects are removed.
+D. Only Metastore Administrators receive the permission.
+E. The permission applies only after a manual refresh.
+Correct Answer: B. Child objects automatically inherit the permission.
+________________________________________
+Question 4
+When is the top-down permission model most appropriate?
+A. When granting access to only one specific table
+B. When users need broad access to an entire Catalog or Schema through inherited permissions
+C. When hiding catalogs from all users
+D. When granting MANAGE privileges only
+E. When assigning permissions to Spark clusters
+Correct Answer: B. When users need broad access to an entire Catalog or Schema through inherited permissions
+________________________________________
+Question 5
+Which combination of privileges is required for a user to successfully query a Unity Catalog table?
+A. SELECT only
+B. USE CATALOG and SELECT only
+C. USE SCHEMA and SELECT only
+D. USE CATALOG, USE SCHEMA, and SELECT
+E. BROWSE and SELECT only
+Correct Answer: D. USE CATALOG, USE SCHEMA, and SELECT
+________________________________________
+Question 6
+What does the BROWSE privilege allow a user to do?
+A. Read data from tables and views
+B. Modify table data
+C. Discover catalogs, view metadata, and see lineage without accessing the data itself
+D. Create new schemas and tables
+E. Drop Unity Catalog objects
+Correct Answer: C. Discover catalogs, view metadata, and see lineage without accessing the data itself
+________________________________________
+Question 7
+Which privilege allows a user to read files stored in a Unity Catalog Volume?
+A. SELECT
+B. MODIFY
+C. READ VOLUME
+D. WRITE VOLUME
+E. EXECUTE
+Correct Answer: C. READ VOLUME
+________________________________________
+Question 8
+Which statement about ALL PRIVILEGES is correct?
+A. It includes the ability to change object ownership.
+B. It includes the MANAGE privilege automatically.
+C. It grants nearly every operational permission but does not include managing permissions or ownership.
+D. It is equivalent to Metastore Administrator privileges.
+E. It allows only read operations.
+Correct Answer: C. It grants nearly every operational permission but does not include managing permissions or ownership.
+________________________________________
+Question 9
+What additional capabilities does the MANAGE privilege provide?
+A. Querying tables only
+B. Reading files from Volumes only
+C. Renaming objects, dropping objects, and changing permissions
+D. Creating Spark clusters automatically
+E. Running notebooks as another user
+Correct Answer: C. Renaming objects, dropping objects, and changing permissions
+________________________________________
+Question 10
+Which approach is recommended for repeatable, automated permission management in Unity Catalog?
+A. Editing notebook source code
+B. Using only the Catalog Explorer UI
+C. Using SQL GRANT and REVOKE statements
+D. Restarting the Metastore after each permission change
+E. Assigning permissions directly to individual users instead of groups
+Correct Answer: C. Using SQL GRANT and REVOKE statements
+

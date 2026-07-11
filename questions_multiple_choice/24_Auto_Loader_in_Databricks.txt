@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of Auto Loader in Databricks?
+A. To manually copy files from local machines into DBFS
+B. To efficiently and incrementally ingest new files from cloud storage into Delta Lake tables
+C. To replace Unity Catalog metadata management
+D. To optimize SQL query performance on Delta tables
+E. To create Spark clusters automatically
+Correct Answer: B. To efficiently and incrementally ingest new files from cloud storage into Delta Lake tables
+________________________________________
+Question 2
+Which technology is Auto Loader built on?
+A. Delta Live Tables only
+B. Databricks SQL Warehouses
+C. Structured Streaming using the CloudFiles source
+D. Apache Kafka Connect
+E. MLflow Tracking
+Correct Answer: C. Structured Streaming using the CloudFiles source
+________________________________________
+Question 3
+How does Auto Loader achieve exactly-once processing?
+A. By deleting processed files after ingestion
+B. By storing processed file metadata in a checkpoint directory using RocksDB
+C. By renaming processed files with a timestamp
+D. By loading every file twice and comparing results
+E. By requiring manual tracking of processed files
+Correct Answer: B. By storing processed file metadata in a checkpoint directory using RocksDB
+________________________________________
+Question 4
+What is the primary purpose of the checkpoint directory in Auto Loader?
+A. To store Delta Lake transaction logs only
+B. To cache Spark executors for faster processing
+C. To store progress, schema information, processed file metadata, and RocksDB data
+D. To permanently archive source files after processing
+E. To store Unity Catalog permissions
+Correct Answer: C. To store progress, schema information, processed file metadata, and RocksDB data
+________________________________________
+Question 5
+Which Auto Loader option specifies where inferred schemas are stored?
+A. cloudFiles.checkpointPath
+B. cloudFiles.schemaHints
+C. cloudFiles.schemaLocation
+D. mergeSchema
+E. cloudFiles.useNotifications
+Correct Answer: C. cloudFiles.schemaLocation
+________________________________________
+Question 6
+Which statement correctly describes Schema Hints in Auto Loader?
+A. Every column must be explicitly defined.
+B. Schema hints completely disable schema inference.
+C. Only selected columns are overridden while the remaining columns are inferred automatically.
+D. Schema hints are supported only for JSON files.
+E. Schema hints prevent schema evolution entirely.
+Correct Answer: C. Only selected columns are overridden while the remaining columns are inferred automatically.
+________________________________________
+Question 7
+Which file detection mode is the default behavior for Auto Loader?
+A. Azure Event Grid notifications
+B. AWS SQS notifications
+C. Google Pub/Sub notifications
+D. Directory Listing
+E. Kafka Event Streaming
+Correct Answer: D. Directory Listing
+________________________________________
+Question 8
+Which Auto Loader option enables event-based file detection using cloud notification services?
+A. cloudFiles.enableStreaming=true
+B. cloudFiles.useNotifications=true
+C. cloudFiles.eventMode=true
+D. cloudFiles.notificationService=eventGrid
+E. cloudFiles.incremental=true
+Correct Answer: B. cloudFiles.useNotifications=true
+________________________________________
+Question 9
+Which trigger should be used when Auto Loader needs to process all currently available files and then stop automatically?
+A. .trigger(processingTime="30 seconds")
+B. .trigger(continuous=True)
+C. .trigger(availableNow=True)
+D. .trigger(batchMode=True)
+E. .trigger(once=False)
+Correct Answer: C. .trigger(availableNow=True)
+________________________________________
+Question 10
+Which schema evolution mode stores unexpected columns in the _rescued_data column without failing the stream?
+A. addNewColumns
+B. none
+C. mergeSchema
+D. failOnNewColumns
+E. rescue
+Correct Answer: E. rescue
+

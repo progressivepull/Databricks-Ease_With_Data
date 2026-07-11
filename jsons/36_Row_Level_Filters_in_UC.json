@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">36 Row Level Filters in UC</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/36_Row_Level_Filters_in_UC",
+		"link_explanation_folder_name": "EXPLANATION_36_*",
+		"link_explanation_file_name": "EXPLANATION_36_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/36_Row_Level_Filters_in_UC",
+		"link_answer_folder_name": "ANSWER_36_*",
+		"link_answer_file_name": "ANSWER_36_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Row-Level Security (RLS) in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "To prevent users from accessing an entire Databricks workspace",
+        "B": "To encrypt sensitive columns in a table",
+        "C": "To restrict which rows each user can view within the same table",
+        "D": "To automatically create separate tables for each user",
+        "E": "To hide SQL query text from users"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why are Row-Level Filters preferred over maintaining multiple copies of the same table?"
+        }
+      ],
+      "options": {
+        "A": "They permanently delete unauthorized rows.",
+        "B": "They dynamically restrict access based on security rules while allowing all users to query a single physical table.",
+        "C": "They require every query to include a custom WHERE clause.",
+        "D": "They eliminate the need for Unity Catalog.",
+        "E": "They convert tables into views automatically."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which built-in Databricks SQL function returns the identity of the user executing the query?"
+        }
+      ],
+      "options": {
+        "A": "CURRENT_ROLE()",
+        "B": "CURRENT_EMAIL()",
+        "C": "CURRENT_USER()",
+        "D": "SESSION_USER()",
+        "E": "ACTIVE_USER()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the purpose of the metadata table used in the lesson?"
+        }
+      ],
+      "options": {
+        "A": "To store Spark cluster configurations",
+        "B": "To store Delta transaction logs",
+        "C": "To centrally maintain user authorization rules, such as which market segments each user may access",
+        "D": "To cache query results for faster execution",
+        "E": "To store notebook permissions only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why is the SQL EXISTS operator used in the row filter function?"
+        }
+      ],
+      "options": {
+        "A": "It returns the first matching row from a table.",
+        "B": "It automatically updates the metadata table.",
+        "C": "It returns a Boolean value indicating whether an authorization match exists.",
+        "D": "It counts the number of authorized users.",
+        "E": "It creates a temporary view for each user."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What type of value must a Unity Catalog row filter function return?"
+        }
+      ],
+      "options": {
+        "A": "Integer",
+        "B": "String",
+        "C": "Table",
+        "D": "Boolean (TRUE or FALSE)",
+        "E": "JSON object"
+      },
+      "answer": "D",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why does the lesson first implement the security logic as a dynamic view before applying a row filter to the table?"
+        }
+      ],
+      "options": {
+        "A": "Dynamic views permanently replace the underlying table.",
+        "B": "Dynamic views execute faster than row filters.",
+        "C": "They allow the security logic to be validated before applying automatic enforcement at the table level.",
+        "D": "Row filters cannot use metadata tables directly.",
+        "E": "Unity Catalog requires every row filter to be created from a view."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens after a row filter is attached directly to a Unity Catalog table?"
+        }
+      ],
+      "options": {
+        "A": "Users must manually include a WHERE clause in every query.",
+        "B": "Only administrators can query the table.",
+        "C": "Unity Catalog automatically applies the filter to every query against the table.",
+        "D": "The table becomes read-only.",
+        "E": "The table is converted into a dynamic view."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How can an administrator grant a user access to an additional market segment without modifying the row filter function?"
+        }
+      ],
+      "options": {
+        "A": "Rewrite the SQL function.",
+        "B": "Recreate the table.",
+        "C": "Update the metadata table with the new authorization rule.",
+        "D": "Restart the Databricks cluster.",
+        "E": "Create a separate table for the user."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement correctly compares Dynamic Views and Row-Level Filters?"
+        }
+      ],
+      "options": {
+        "A": "Both automatically apply security to every table query without additional configuration.",
+        "B": "Dynamic Views require users to query the view, while Row-Level Filters automatically enforce security on all queries against the table.",
+        "C": "Row-Level Filters cannot use Boolean functions.",
+        "D": "Dynamic Views can only filter columns, not rows.",
+        "E": "Row-Level Filters require users to manually call a security function in every query."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

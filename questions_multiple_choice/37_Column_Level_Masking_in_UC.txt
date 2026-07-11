@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of Column-Level Masking in Unity Catalog?
+A. To remove sensitive columns from a table permanently
+B. To restrict access to entire rows based on user identity
+C. To dynamically hide or mask sensitive column values while keeping the column visible
+D. To encrypt all data stored in Delta Lake
+E. To create separate tables for different user groups
+Correct Answer: C. To dynamically hide or mask sensitive column values while keeping the column visible
+________________________________________
+Question 2
+How does Column-Level Masking differ from Row-Level Security?
+A. Column-Level Masking hides entire rows, while Row-Level Security hides columns.
+B. Column-Level Masking protects individual column values, while Row-Level Security controls which rows are visible.
+C. Both features perform exactly the same function.
+D. Row-Level Security works only with SQL, while Column-Level Masking works only with PySpark.
+E. Column-Level Masking requires separate tables for each user.
+Correct Answer: B. Column-Level Masking protects individual column values, while Row-Level Security controls which rows are visible.
+________________________________________
+Question 3
+Which built-in SQL function returns the identity of the user executing the current query?
+A. CURRENT_ROLE()
+B. USER_NAME()
+C. CURRENT_USER()
+D. SESSION_EMAIL()
+E. ACTIVE_USER()
+Correct Answer: C. CURRENT_USER()
+________________________________________
+Question 4
+In the metadata-driven masking approach, what is the primary purpose of the metadata table?
+A. To store Spark cluster information
+B. To maintain mappings between users and their authorization groups or roles
+C. To cache masked values for faster queries
+D. To replace Unity Catalog permissions
+E. To store Delta transaction logs
+Correct Answer: B. To maintain mappings between users and their authorization groups or roles
+________________________________________
+Question 5
+Which SQL construct is used in the lesson to determine whether the original phone number or the masked value should be returned?
+A. JOIN
+B. MERGE
+C. CASE
+D. GROUP BY
+E. HAVING
+Correct Answer: C. CASE
+________________________________________
+Question 6
+What type of value does a column masking function return?
+A. Boolean (TRUE or FALSE)
+B. A complete table
+C. The same data type as the protected column, such as a string for phone numbers
+D. JSON only
+E. An integer only
+Correct Answer: C. The same data type as the protected column, such as a string for phone numbers
+________________________________________
+Question 7
+What happens after a masking function is attached to a column in a Unity Catalog table?
+A. Users must manually call the masking function in every query.
+B. The protected column is permanently replaced with masked values.
+C. Unity Catalog automatically applies the masking function whenever the column is queried.
+D. The table becomes read-only.
+E. The column is removed from the table.
+Correct Answer: C. Unity Catalog automatically applies the masking function whenever the column is queried.
+________________________________________
+Question 8
+What is the purpose of the built-in is_member() function?
+A. To determine whether a table contains duplicate rows
+B. To check whether the current user belongs to a specified group
+C. To verify whether a Spark cluster is active
+D. To retrieve the current user's email address
+E. To determine whether a table exists in Unity Catalog
+Correct Answer: B. To check whether the current user belongs to a specified group
+________________________________________
+Question 9
+What is an advantage of using is_member() instead of a metadata table for column masking?
+A. It requires maintaining a custom user-to-group mapping table.
+B. It works only for administrators.
+C. It simplifies authorization by using existing Databricks or identity-provider groups without maintaining custom mappings.
+D. It permanently stores masked values in the table.
+E. It replaces Object-Level Security.
+Correct Answer: C. It simplifies authorization by using existing Databricks or identity-provider groups without maintaining custom mappings.
+________________________________________
+Question 10
+Which combination of Unity Catalog security features provides a layered approach to data protection?
+A. Delta Lake, Auto Loader, and DLT
+B. Object-Level Security, Row-Level Security, and Column-Level Masking
+C. Unity Catalog, MLflow, and Databricks SQL
+D. Catalogs, Schemas, and Volumes
+E. Checkpoints, Lineage, and Time Travel
+Correct Answer: B. Object-Level Security, Row-Level Security, and Column-Level Masking
+

@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">37 Column Level Masking in UC</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/37_Column_Level_Masking_in_UC",
+		"link_explanation_folder_name": "EXPLANATION_37_*",
+		"link_explanation_file_name": "EXPLANATION_37_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/37_Column_Level_Masking_in_UC",
+		"link_answer_folder_name": "ANSWER_37_*",
+		"link_answer_file_name": "ANSWER_37_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Column-Level Masking in Unity Catalog?"
+        }
+      ],
+      "options": {
+        "A": "To remove sensitive columns from a table permanently",
+        "B": "To restrict access to entire rows based on user identity",
+        "C": "To dynamically hide or mask sensitive column values while keeping the column visible",
+        "D": "To encrypt all data stored in Delta Lake",
+        "E": "To create separate tables for different user groups"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How does Column-Level Masking differ from Row-Level Security?"
+        }
+      ],
+      "options": {
+        "A": "Column-Level Masking hides entire rows, while Row-Level Security hides columns.",
+        "B": "Column-Level Masking protects individual column values, while Row-Level Security controls which rows are visible.",
+        "C": "Both features perform exactly the same function.",
+        "D": "Row-Level Security works only with SQL, while Column-Level Masking works only with PySpark.",
+        "E": "Column-Level Masking requires separate tables for each user."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which built-in SQL function returns the identity of the user executing the current query?"
+        }
+      ],
+      "options": {
+        "A": "CURRENT_ROLE()",
+        "B": "USER_NAME()",
+        "C": "CURRENT_USER()",
+        "D": "SESSION_EMAIL()",
+        "E": "ACTIVE_USER()"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "In the metadata-driven masking approach, what is the primary purpose of the metadata table?"
+        }
+      ],
+      "options": {
+        "A": "To store Spark cluster information",
+        "B": "To maintain mappings between users and their authorization groups or roles",
+        "C": "To cache masked values for faster queries",
+        "D": "To replace Unity Catalog permissions",
+        "E": "To store Delta transaction logs"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which SQL construct is used in the lesson to determine whether the original phone number or the masked value should be returned?"
+        }
+      ],
+      "options": {
+        "A": "JOIN",
+        "B": "MERGE",
+        "C": "CASE",
+        "D": "GROUP BY",
+        "E": "HAVING"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What type of value does a column masking function return?"
+        }
+      ],
+      "options": {
+        "A": "Boolean (TRUE or FALSE)",
+        "B": "A complete table",
+        "C": "The same data type as the protected column, such as a string for phone numbers",
+        "D": "JSON only",
+        "E": "An integer only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens after a masking function is attached to a column in a Unity Catalog table?"
+        }
+      ],
+      "options": {
+        "A": "Users must manually call the masking function in every query.",
+        "B": "The protected column is permanently replaced with masked values.",
+        "C": "Unity Catalog automatically applies the masking function whenever the column is queried.",
+        "D": "The table becomes read-only.",
+        "E": "The column is removed from the table."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the purpose of the built-in is_member() function?"
+        }
+      ],
+      "options": {
+        "A": "To determine whether a table contains duplicate rows",
+        "B": "To check whether the current user belongs to a specified group",
+        "C": "To verify whether a Spark cluster is active",
+        "D": "To retrieve the current user's email address",
+        "E": "To determine whether a table exists in Unity Catalog"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is an advantage of using is_member() instead of a metadata table for column masking?"
+        }
+      ],
+      "options": {
+        "A": "It requires maintaining a custom user-to-group mapping table.",
+        "B": "It works only for administrators.",
+        "C": "It simplifies authorization by using existing Databricks or identity-provider groups without maintaining custom mappings.",
+        "D": "It permanently stores masked values in the table.",
+        "E": "It replaces Object-Level Security."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which combination of Unity Catalog security features provides a layered approach to data protection?"
+        }
+      ],
+      "options": {
+        "A": "Delta Lake, Auto Loader, and DLT",
+        "B": "Object-Level Security, Row-Level Security, and Column-Level Masking",
+        "C": "Unity Catalog, MLflow, and Databricks SQL",
+        "D": "Catalogs, Schemas, and Volumes",
+        "E": "Checkpoints, Lineage, and Time Travel"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

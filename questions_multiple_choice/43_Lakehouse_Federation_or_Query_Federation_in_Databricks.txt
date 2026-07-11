@@ -1,0 +1,90 @@
+Question 1
+What is the primary purpose of Lakehouse Federation in Databricks?
+A. To automatically copy external databases into Delta Lake
+B. To query external data sources directly without moving the data into the Lakehouse
+C. To convert relational databases into Unity Catalog metastores
+D. To replace SQL Warehouses with Spark clusters
+E. To automatically back up external databases into cloud storage
+Correct Answer: B. To query external data sources directly without moving the data into the Lakehouse
+________________________________________
+Question 2
+Which of the following is a key benefit of using Lakehouse Federation?
+A. It requires all external data to be converted to Delta format first.
+B. It eliminates the need for Unity Catalog.
+C. It reduces storage duplication by querying data where it already resides.
+D. It only supports Azure Data Lake Storage.
+E. It automatically creates ETL pipelines for every external database.
+Correct Answer: C. It reduces storage duplication by querying data where it already resides.
+________________________________________
+Question 3
+What Unity Catalog object represents external data accessed through a live connection?
+A. Managed Catalog
+B. Delta Catalog
+C. Foreign Catalog
+D. Shared Volume
+E. External Pipeline
+Correct Answer: C. Foreign Catalog
+________________________________________
+Question 4
+Before querying an external database with Lakehouse Federation, what must be created first?
+A. A Delta Live Tables pipeline
+B. A Materialized View
+C. A Connection
+D. A Streaming Table
+E. A Delta Sharing Recipient
+Correct Answer: C. A Connection
+________________________________________
+Question 5
+Which of the following databases is supported by Lakehouse Federation?
+A. PostgreSQL
+B. MongoDB only
+C. Apache Kafka only
+D. Delta Lake only
+E. Unity Catalog only
+Correct Answer: A. PostgreSQL
+________________________________________
+Question 6
+Which compute environment can be used to test and run Lakehouse Federation connections?
+A. SQL Warehouses and Classic Databricks Compute
+B. Unity Catalog only
+C. Delta Sharing only
+D. MLflow Tracking Server only
+E. Databricks Repos only
+Correct Answer: A. SQL Warehouses and Classic Databricks Compute
+________________________________________
+Question 7
+How are tables inside a Foreign Catalog identified?
+A. Type = Delta
+B. Type = Managed
+C. Type = External Volume
+D. Type = Foreign
+E. Type = Streaming
+Correct Answer: D. Type = Foreign
+________________________________________
+Question 8
+How does Databricks query data in a Foreign Catalog?
+A. It requires a special SQL dialect different from ANSI SQL.
+B. It first imports all tables into Delta Lake before querying.
+C. It uses the same SQL syntax as native Unity Catalog tables while reading data from the external database.
+D. It converts the external database into a Streaming Table automatically.
+E. It only supports Python notebooks for querying external data.
+Correct Answer: C. It uses the same SQL syntax as native Unity Catalog tables while reading data from the external database.
+________________________________________
+Question 9
+Which feature allows Lakehouse Federation credentials to be stored securely instead of hardcoding usernames and passwords in SQL scripts?
+A. Delta Transaction Log
+B. Databricks Secret Scopes or Azure Key Vault-backed Secret Scopes
+C. SQL Warehouse Cache
+D. Unity Catalog Volumes
+E. Materialized Views
+Correct Answer: B. Databricks Secret Scopes or Azure Key Vault-backed Secret Scopes
+________________________________________
+Question 10
+Which pair of SQL statements can be used to automate the setup of Lakehouse Federation?
+A. CREATE TABLE and CREATE VIEW
+B. CREATE STREAMING TABLE and REFRESH TABLE
+C. CREATE CONNECTION and CREATE FOREIGN CATALOG
+D. CREATE PIPELINE and CREATE JOB
+E. CREATE DATABASE and CREATE SCHEMA
+Correct Answer: C. CREATE CONNECTION and CREATE FOREIGN CATALOG
+

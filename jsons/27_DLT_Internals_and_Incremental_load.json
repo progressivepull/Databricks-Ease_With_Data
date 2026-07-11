@@ -1,0 +1,291 @@
+{
+  "config": {
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">27 DLT Internals & Incremental load</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/27_DLT_Internals_and_Incremental_load",
+		"link_explanation_folder_name": "EXPLANATION_27_*",
+		"link_explanation_file_name": "EXPLANATION_27_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/27_DLT_Internals_and_Incremental_load",
+		"link_answer_folder_name": "ANSWER_27_*",
+		"link_answer_file_name": "ANSWER_27_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is one of the biggest advantages of Delta Live Tables (DLT) regarding pipeline datasets?"
+        }
+      ],
+      "options": {
+        "A": "Developers must manually create and delete every Delta table.",
+        "B": "DLT automatically manages the lifecycle of datasets created within a pipeline.",
+        "C": "DLT stores all datasets only in local notebook memory.",
+        "D": "Developers must manually register every table in Unity Catalog.",
+        "E": "DLT automatically converts all tables into streaming tables."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is created each time a Delta Live Tables pipeline executes?"
+        }
+      ],
+      "options": {
+        "A": "A new Unity Catalog metastore",
+        "B": "A Delta Lake backup copy",
+        "C": "An Update containing execution status, logs, metrics, and Spark UI information",
+        "D": "A new Databricks workspace",
+        "E": "A second pipeline for disaster recovery"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "When 10,000 new rows are added to the orders_raw table and the DLT pipeline is rerun, what happens?"
+        }
+      ],
+      "options": {
+        "A": "The entire Orders and Customers datasets are reprocessed.",
+        "B": "Only the Customers Bronze table is refreshed.",
+        "C": "Only the new 10,000 order records are processed by the Streaming Table, and downstream layers are updated automatically.",
+        "D": "The Gold table must be rebuilt manually.",
+        "E": "All checkpoints are deleted before processing begins."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why are Streaming Tables efficient for incremental ETL?"
+        }
+      ],
+      "options": {
+        "A": "They always reload every record from the source.",
+        "B": "They process only new data by remembering previously processed records through checkpoints.",
+        "C": "They permanently cache all source data in memory.",
+        "D": "They require manual filtering of duplicate records.",
+        "E": "They process only CSV files."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens to Materialized Views when upstream data changes?"
+        }
+      ],
+      "options": {
+        "A": "They must be manually refreshed by the developer.",
+        "B": "They become read-only until rebuilt.",
+        "C": "They automatically recompute joins and aggregations to produce the latest results.",
+        "D": "They stop accepting new data until the schema is recreated.",
+        "E": "They are converted into temporary views."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How does Delta Live Tables handle schema evolution when a developer renames a column or adds a new aggregation?"
+        }
+      ],
+      "options": {
+        "A": "The developer must manually alter the destination table before running the pipeline.",
+        "B": "The schema cannot be changed after the pipeline is created.",
+        "C": "Only the transformation code needs to be updated, and DLT automatically applies the schema changes during execution.",
+        "D": "The existing pipeline must be deleted and recreated.",
+        "E": "Schema changes are supported only for Streaming Tables."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What happens when a dataset such as joined_silver is renamed to order_silver in the DLT notebook?"
+        }
+      ],
+      "options": {
+        "A": "Both datasets remain in Unity Catalog permanently.",
+        "B": "Developers must manually delete the old dataset after the pipeline completes.",
+        "C": "DLT automatically removes the old dataset, creates the new one, and updates pipeline metadata.",
+        "D": "The pipeline fails because dataset names cannot be changed.",
+        "E": "Only the notebook name changes; the dataset name remains the same."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Where is the physical data for DLT Streaming Tables and Materialized Views actually stored?"
+        }
+      ],
+      "options": {
+        "A": "Only inside notebook files",
+        "B": "In Azure SQL Database",
+        "C": "In hidden Delta tables within the Databricks Internal Catalog managed by DLT",
+        "D": "Only in Unity Catalog metadata tables",
+        "E": "Inside Spark executor memory only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What information is stored in Streaming Table checkpoints?"
+        }
+      ],
+      "options": {
+        "A": "User login credentials and cluster passwords",
+        "B": "Dashboard layouts and notebook comments",
+        "C": "Processed records, stream offsets, and processing progress used for incremental execution",
+        "D": "SQL query history only",
+        "E": "Unity Catalog access policies only"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which statement about Unity Catalog Lineage is correct?"
+        }
+      ],
+      "options": {
+        "A": "It is available only for Delta Live Tables pipelines.",
+        "B": "It tracks only table names and ignores columns.",
+        "C": "It provides end-to-end table and column-level lineage for DLT pipelines and other Unity Catalog-managed assets.",
+        "D": "It works only for Streaming Tables.",
+        "E": "It requires developers to manually document every transformation."
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

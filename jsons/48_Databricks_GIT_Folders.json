@@ -1,0 +1,289 @@
+{
+	  "config": {
+		"version": "1.0",
+		"exam_name": "<div style=\"color: #3527F5; font-weight: bold; padding: 10px;\">48 Databricks GIT Folders</div>",
+		"link_explanation_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/tree/main/markdown_explains/48_Databricks_GIT_Folders",
+		"link_explanation_folder_name": "EXPLANATION_48_*",
+		"link_explanation_file_name": "EXPLANATION_48_*",
+		"link_answer_base_url": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_answers/48_Databricks_GIT_Folders",
+		"link_answer_folder_name": "ANSWER_48_*",
+		"link_answer_file_name": "ANSWER_48_*",
+		"link_terms": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/markdown_terms/terms",
+		"readme_content": "https://github.com/progressivepull/Databricks-Ease_With_Data/blob/main/README",
+		"shuffle_questions": true,
+		"shuffle_options": true,
+		"time_limit_minutes": 60
+	  },
+  "questions": [
+    {
+      "id": 1,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the primary purpose of Databricks Git Folders?"
+        }
+      ],
+      "options": {
+        "A": "To automatically create Delta Live Tables pipelines",
+        "B": "To integrate Git repositories with a Databricks workspace for version control and collaboration",
+        "C": "To replace Unity Catalog for data governance",
+        "D": "To schedule SQL queries automatically",
+        "E": "To manage SQL Warehouse configurations"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 2,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Git operation is supported by Databricks Git Folders?"
+        }
+      ],
+      "options": {
+        "A": "Clone repositories",
+        "B": "Create SQL Warehouses",
+        "C": "Refresh Materialized Views",
+        "D": "Create Delta tables",
+        "E": "Manage Unity Catalog permissions"
+      },
+      "answer": "A",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 3,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which Azure DevOps service is used to store notebooks, source code, and configuration files using Git version control?"
+        }
+      ],
+      "options": {
+        "A": "Boards",
+        "B": "Test Plans",
+        "C": "Repos",
+        "D": "Artifacts",
+        "E": "Monitor"
+      },
+      "answer": "C",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 4,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "How does Databricks authenticate with Azure DevOps when connecting a Git repository?"
+        }
+      ],
+      "options": {
+        "A": "Azure Active Directory only",
+        "B": "Username and Personal Access Token (PAT)",
+        "C": "SSH private key only",
+        "D": "Databricks Access Token only",
+        "E": "Unity Catalog credentials"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 5,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "What is the purpose of the Sparse Checkout feature?"
+        }
+      ],
+      "options": {
+        "A": "To automatically merge Git branches",
+        "B": "To clone only selected folders from a repository, reducing the local workspace size",
+        "C": "To convert notebooks into Delta tables",
+        "D": "To back up notebooks to Unity Catalog Volumes",
+        "E": "To encrypt Git repositories before cloning"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 6,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why are feature branches commonly used when working with Databricks Git Folders?"
+        }
+      ],
+      "options": {
+        "A": "They permanently replace the main branch.",
+        "B": "They allow developers to work independently without affecting the main branch.",
+        "C": "They automatically deploy code to production.",
+        "D": "They eliminate the need for commits.",
+        "E": "They prevent pulling updates from the remote repository."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 7,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Why does the lesson recommend saving Databricks notebooks in Source format instead of the default .ipynb format?"
+        }
+      ],
+      "options": {
+        "A": "Source format automatically executes notebooks faster.",
+        "B": "Source format stores notebooks as .py files, making Git diffs, code reviews, and version control easier.",
+        "C": "Source format converts notebooks into SQL scripts only.",
+        "D": "Source format eliminates the need for Git repositories.",
+        "E": "Source format enables automatic deployment to production."
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 8,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "After modifying a notebook, what indication does Databricks display before the changes are committed?"
+        }
+      ],
+      "options": {
+        "A": "Ready (R)",
+        "B": "Modified (M)",
+        "C": "Synced (S)",
+        "D": "Locked (L)",
+        "E": "Published (P)"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 9,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which sequence correctly describes the Git workflow demonstrated in the lesson?"
+        }
+      ],
+      "options": {
+        "A": "Pull → Commit → Clone → Push",
+        "B": "Create Notebook → Edit Notebook → Commit → Push",
+        "C": "Push → Clone → Edit → Commit",
+        "D": "Create Branch → Delete Repository → Commit → Pull",
+        "E": "Create SQL Warehouse → Commit → Push → Publish Dashboard"
+      },
+      "answer": "B",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    },
+    {
+      "id": 10,
+      "problem_description": [],
+      "question": [
+        {
+          "line": "Which tools are highlighted as part of the future CI/CD deployment workflow for Databricks projects?"
+        }
+      ],
+      "options": {
+        "A": "Azure Pipelines, Databricks Asset Bundles (DABs), and Databricks CLI",
+        "B": "Unity Catalog, Delta Sharing, and MLflow",
+        "C": "SQL Alerts, Genie Spaces, and Metric Views",
+        "D": "Apache Hive, Apache NiFi, and Kafka",
+        "E": "Power BI, Tableau, and Excel"
+      },
+      "answer": "A",
+      "resource": {
+        "code": {
+          "lines": [
+            {
+              "line": ""
+            }
+          ],
+          "language": ""
+        }
+      }
+    }
+  ]
+}

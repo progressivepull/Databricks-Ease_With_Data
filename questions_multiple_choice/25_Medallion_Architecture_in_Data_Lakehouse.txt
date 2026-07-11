@@ -1,0 +1,92 @@
+Question 1
+What is the primary purpose of Databricks Auto Loader?
+A. To create Delta Lake tables from SQL scripts only
+B. To continuously optimize Delta tables for performance
+C. To incrementally ingest new files from cloud storage into Delta Lake tables
+D. To replace Structured Streaming with batch processing
+E. To convert Parquet files into CSV files automatically
+Correct Answer: C. To incrementally ingest new files from cloud storage into Delta Lake tables
+________________________________________
+Question 2
+Which Structured Streaming source does Auto Loader use to read incoming files?
+A. deltaFiles
+B. cloudFiles
+C. autoStream
+D. fileLoader
+E. streamFiles
+Correct Answer: B. cloudFiles
+________________________________________
+Question 3
+Which feature ensures that Auto Loader does not process the same file more than once?
+A. Time Travel
+B. Delta Cache
+C. Exactly-once processing with checkpoints and RocksDB
+D. Partition Pruning
+E. Z-Ordering
+Correct Answer: C. Exactly-once processing with checkpoints and RocksDB
+________________________________________
+Question 4
+Which Auto Loader option specifies where inferred schemas and schema evolution metadata are stored?
+A. cloudFiles.metadataLocation
+B. cloudFiles.schemaLocation
+C. checkpointLocation
+D. delta.schemaPath
+E. schemaTrackingPath
+Correct Answer: B. cloudFiles.schemaLocation
+________________________________________
+Question 5
+What is the purpose of the following option?
+.option("pathGlobFilter", "*.csv")
+A. Compress CSV files before loading them
+B. Convert all file types into CSV format
+C. Process only CSV files while ignoring other file types
+D. Load only files larger than 1 MB
+E. Rename CSV files during ingestion
+Correct Answer: C. Process only CSV files while ignoring other file types
+________________________________________
+Question 6
+Which Auto Loader feature allows you to specify data types for only selected columns while automatically inferring the rest?
+A. Schema Merge
+B. Schema Validation
+C. Schema Hints
+D. Schema Registry
+E. Schema Override
+Correct Answer: C. Schema Hints
+________________________________________
+Question 7
+What happens when Auto Loader uses the Available Now trigger?
+A. The stream runs forever until manually stopped.
+B. Only one file is processed each time the stream runs.
+C. All currently available files are processed, and then the stream stops automatically.
+D. Files are processed only when a user manually approves them.
+E. Processing occurs only when new notifications arrive.
+Correct Answer: C. All currently available files are processed, and then the stream stops automatically.
+________________________________________
+Question 8
+Which file detection method is the default for Auto Loader?
+A. Event Hub Notifications
+B. File Notification
+C. Kafka Streaming
+D. Directory Listing
+E. Delta Change Data Feed
+Correct Answer: D. Directory Listing
+________________________________________
+Question 9
+Which schema evolution mode stores unexpected columns inside a special rescued data column while allowing the stream to continue running?
+A. Add New Columns
+B. None
+C. Rescue
+D. Fail on New Columns
+E. Strict Mode
+Correct Answer: C. Rescue
+________________________________________
+Question 10
+Which hidden metadata column can be used to record the source filename for each ingested row?
+A. _metadata.file_path
+B. _metadata.source
+C. _metadata.file_name
+D. _metadata.filename_id
+E. _metadata.input_file
+Correct Answer: C. _metadata.file_name
+
+
