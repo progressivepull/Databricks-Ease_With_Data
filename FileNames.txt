@@ -76,7 +76,7 @@
 27_DLT_Internals_and_Incremental_load.docx
 
 28 DLT Append Flow(Union) & Autoloader.docx
-28_DLT_Append_Flow_Union_&_Autoloader.docx
+28_DLT_Append_Flow_Union_and_Autoloader.docx
 
 29 DLT SCD2 & SCD1 table (Members only)
 
