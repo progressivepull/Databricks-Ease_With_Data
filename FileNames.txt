@@ -106,7 +106,6 @@
 
 38 Workspace Catalog Binding in Unity Catalog in Databricks (Members only)
 
-
 39 Delta Sharing in Databricks.docx
 39_Delta_Sharing_in_Databricks.docx
 
