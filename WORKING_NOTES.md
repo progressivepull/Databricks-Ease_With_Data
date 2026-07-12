@@ -2,25 +2,25 @@
 
 * [ Databricks - Zero to Hero | Ease with Data | YouTube Playlist](https://www.youtube.com/playlist?list=PL2IsFZBGM_IGiAvVZWAEKX8gg1ItnxEEb)
 
--- Git Bash
-cd /C/Users/whwtb/Documents/Databricks-Ease_With_Data
 
+# ChatGPT PROMPTS 
 
--- ChatGPT PROMPTS 
+## markdown_content
+Load the file located in the **video_scripts** directory. Create a concise summary of its contents. Rewrite the prompt so that the summary is included directly inside the prompt text. 
 
---- markdown_content
+video_scripts --> markdown_content
 
-summary. 
+```
+summary. Hello and welcome back. Today we are going to discuss about functions ....
+```
 
---- questions_multiple_choise (Questions) ---
+## questions_multiple_choise
 
-Create a multiple-choice quiz question about ....
-Include exactly five answer options: four incorrect answers and one correct answer. 
-Clearly indicate which option is correct at the end.
-
+```
 Create a 10 multiple-choice quiz question following information 
 Include exactly five answer options: four incorrect answers and one correct answer. 
 Clearly indicate which option is correct at the end.
+```
 
 --- questions_multiple_choice--->markdown_answers (ANSWER_CH_NO) ----
 
